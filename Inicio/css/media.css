@@ -1,0 +1,94 @@
+/* Dispositivos móviles con una anchura menor a 600px */
+@media only screen and (max-width: 600px) {
+  .navbar__logo {
+    height: 25px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: var(--green);
+    z-index: 14;
+  }
+
+  .navbar-menu a {
+    margin: 10px;
+    font-size: 24px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+
+  .equipo-tarjeta_ancha {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .imagen-integrante {
+    width: 80%;
+    max-width: 200px;
+  }
+}
+
+/* Dispositivos móviles y tablets con una anchura menor a 1024px */
+@media only screen and (max-width: 1024px) {
+  .nivel-tarjeta {
+    padding: 20px;
+  }
+
+  .nivel-tarjeta h1,
+  .nivel-tarjeta h3 {
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .nivel-tarjeta i {
+    font-size: 60px;
+  }
+
+  .container__niveles {
+    margin-top: 30px;
+  }
+
+  .nivel-imagen {
+    width: 100px;
+    height: 100px;
+  }
+
+  .inscribite__boton {
+    font-size: 1em;
+    padding: 10px;
+  }
+}

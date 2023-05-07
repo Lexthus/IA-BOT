@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Preinscripción | IABOT</title>
+    <link rel="icon" href="/Preinscripciones/assets/iabot.robotica.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Preinscripciones/assets/css/reset.css" />
+    <link rel="stylesheet" href="/Preinscripciones/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/Preinscripciones/assets/css/styles.css" />
+  </head>
+  <body>
+    <section class="container__preinscripciones">
+      <div class="preinscripciones">
+        <div class="preinscripciones__formulario">
+          <div class="logo">
+            <img
+              src="/Preinscripciones/assets/logo-formulario/IABOT.png"
+              class="logo__img"
+              alt="Logo IABOT"
+            />
+          </div>
+          <h1 class="titulo">Preinscribite</h1>
+          <p class="instruccion">Complete el siguiente formulario para realizar la preinscripción:</p>
+          <form>
+            <p class="instruccion__formulario">Datos del estudiante</p>
+            <div class="preincripciones__formulario__nombre-completo">
+              <div class="nombre">
+                <label for=""></label>
+                <input
+                  type="text"
+                  placeholder="Nombre *"
+                  class="controls__nombre"
+                  id="CamposFormulario"
+                  required
+                />
+              </div>
+              <div class="apellido">
+                <input
+                  type="text"
+                  placeholder="Apellido *"
+                  class="controls__apellido"
+                  id="CamposFormulario"
+                  required
+                />
+              </div>
+            </div>
+            <input
+              type="number"
+              placeholder="Edad *"
+              class="controls"
+              id="CamposFormulario"
+              required
+            />
+            <div class="formulario__progreso">
+              <ul class="formulario__progreso__marcador">
+                <li class="progreso__paso">
+                  <span class="progreso__paso__numero">1</span>
+                </li>
+                <li class="progreso__paso">
+                  <span class="progreso__paso__numero">2</span>
+                </li>
+                <li class="progreso__paso">
+                  <span class="progreso__paso__numero">3</span>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="submit"
+              value="Siguiente"
+              class="boton-siguiente"
+              id="envio"
+            >
+              Siguiente
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/Preinscripciones/preinscripciones.js"></script>
+
+  </body>
+</html>
