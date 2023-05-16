@@ -248,6 +248,14 @@ a {
   grid-template-columns: 1fr 1fr;
 }
 
+.parte_1, .parte_2 {
+  padding: 0px 15px;
+}
+
+.parte_1 p, .parte_2 p {
+  padding: 0px 30px;
+}
+
 .parte_1 {
   border-right-width: 1px;
   border-right-style: solid;
