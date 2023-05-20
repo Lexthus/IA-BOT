@@ -60,6 +60,10 @@
     width: 80%;
     max-width: 200px;
   }
+
+  .descripcion-inicio {
+    padding: 10px;
+  }
 }
 
 /* Dispositivos móviles y tablets con una anchura menor a 1024px */
