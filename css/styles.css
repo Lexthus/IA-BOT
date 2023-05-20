@@ -206,7 +206,7 @@ a {
   border-radius: 50%;
 }
 
-/* Niveles */
+/* Cursos */
 
 .inscribite {
   text-align: center;
@@ -253,6 +253,14 @@ a {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.parte_1, .parte_2 {
+  padding: 0px 15px;
+}
+
+.parte_1 p, .parte_2 p {
+  padding: 0px 30px;
 }
 
 .parte_1 {
