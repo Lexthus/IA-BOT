@@ -64,6 +64,37 @@
   .descripcion-inicio {
     padding: 10px;
   }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  .container-footer__logo {
+    margin: 0;
+  }
+
+  .footer__logo {
+    height: 8vh;
+  }
+
+  .footer__fecha {
+    font-size: 2.5vh;
+  }
+
+  #redes {
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .container__whatsapp,
+  .container__instagram,
+  .container__email {
+    font-size: 20px;
+  }
+
+  .titulo__red {
+    padding-left: 5px;
+  }
 }
 
 /* Dispositivos móviles y tablets con una anchura menor a 1024px */
