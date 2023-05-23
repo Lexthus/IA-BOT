@@ -6,6 +6,8 @@
   --yellow: #ffa700;
   --orange: #e34c26;
   --green: #57b932;
+  --wedo: #68c3e2;
+  --spike: #ffd501;
 }
 
 *,
@@ -60,8 +62,10 @@ h3 {
 }
 
 p {
-  font-size: 20px;
   margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 a {
@@ -229,23 +233,30 @@ a:hover {
 .container__cursos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: 50px;
   margin-top: 60px;
 }
 
-.curso-tarjeta {
+.curso-tarjeta-wedo , .curso-tarjeta-spike {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--light-grey);
   border-radius: 2%;
   padding: 30px 0;
 }
 
-.curso-tarjeta h1,
-.curso-tarjeta h3 {
+.curso-tarjeta-wedo {
+  background-color: var(--wedo);
+}
+
+.curso-tarjeta-spike {
+  background-color: var(--spike);
+}
+
+.curso-tarjeta-wedo h3, .curso-tarjeta-spike h3 {
   padding: 15px;
+  color: white;
 }
 
 .curso-tarjeta i {
@@ -257,26 +268,6 @@ a:hover {
   height: 150px;
   margin: 30px 0;
   border-radius: 20%;
-}
-
-.curso-tarjeta-partes {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.parte_1, .parte_2 {
-  padding: 0px 2px;
-}
-
-.parte_1 p, .parte_2 p {
-  padding: 0px 20px;
-}
-
-.parte_1 {
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: black;
 }
 
 /* Inscribite */
@@ -308,7 +299,7 @@ a:hover {
 
 footer {
   width: 100%;
-  padding: 5px;
+  padding: 15px;
   bottom: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
