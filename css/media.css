@@ -62,7 +62,20 @@
   }
 
   .descripcion-inicio {
+    width: 100%;
     padding: 10px;
+  }
+
+  .descripcion-inicio img {
+    margin: 0;
+  }
+
+  .titulo-inicio {
+    font-size: xx-large;
+  }
+
+  .descripcion-inicio-container_imagen {
+    position: relative;
   }
 
   footer {

@@ -70,6 +70,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: black;
+}
+
 .navbar-panel {
   width: 100%;
   position: fixed;
@@ -128,18 +132,24 @@ a {
 }*/
 
 .descripcion-inicio {
-  width: 100%;
   padding: 80px;
   text-align: left;
 }
 
+.descripcion-inicio-container_imagen {
+  position: absolute;
+  right: 0;
+}
+
 .descripcion-inicio img{
-  width: 300px;
+  width: 400px;
+  margin: 10px;
 }
 
 .titulo-inicio {
+  text-align: center;
   color: black;
-  font-size: xx-large;
+  font-size: xxx-large;
   margin: 10px;
 }
 
