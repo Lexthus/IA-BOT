@@ -102,6 +102,7 @@
 
   .tarjetas {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .equipo-tarjeta_ancha {
@@ -112,6 +113,7 @@
   .imagen-integrante {
     width: 80%;
     max-width: 200px;
+    margin-top: 15px;
   }
 
   /* Pié de página */

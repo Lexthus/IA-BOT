@@ -36,11 +36,39 @@
       src="https://kit.fontawesome.com/dd85322e97.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
 
   <body>
     <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <nav>
         <div class="navbar-panel">
           <div class="container-navbar__logo">
@@ -66,18 +94,18 @@
     <section id="inicio">
       <!--<div class="fondo-inicio"></div>-->
       <div class="descripcion-inicio fade-in-scroll">
-        <h1 class="titulo-inicio">Bienvenidos a</h1>
-        <img
+        <h1 class="titulo-inicio animate__backInLeft">Bienvenidos a</h1>
+        <img class="animate__backInLeft"
           src="assets/Logo/Edición de logo/iabot-removebg-preview.png"
           alt="Logo iabot"
         />
       </div>
-      <div class="descripcion-inicio-container_imagen fade-in-scroll">
+      <div class="descripcion-inicio-container_imagen fade-in-scroll animate__shakeY">
         <img src="assets/saludo-lego.png" alt="Personaje Lego Saludando" />
       </div>
     </section>
     <section id="historia" class="seccion-historia">
-      <h1>Inspirando el Futuro Tecnológico</h1>
+      <h1 class="fade-in-scroll">Inspirando el Futuro Tecnológico</h1>
       <div class="fade-in-scroll">
         <p>
           En la localidad de Mercedes, creamos una escuela de robótica con el
@@ -98,7 +126,7 @@
       </div>
     </section>
     <section class="mision-valores">
-      <div><h1>Nuestra Misión y Valores</h1></div>
+      <div class="fade-in-scroll"><h1>Nuestra Misión y Valores</h1></div>
       <div class="container-mision-valores fade-in-scroll">
         <div class="mision-valores-tarjeta">
           <h2>Innovación</h2>
@@ -140,8 +168,8 @@
     </section>
 
     <section class="equipo">
-      <h1>Conoce a nuestro equipo</h1>
-      <p>
+      <h1 class="fade-in-scroll">Conoce a nuestro equipo</h1>
+      <p class="fade-in-scroll">
         En IABOT, contamos con un equipo altamente capacitado y comprometido con
         la educación y la robótica. Bajo el liderazgo de nuestros fundadores,
         Franco y Adrián, combinamos experiencia en publicidad, redes sociales y
@@ -150,7 +178,7 @@
         para el futuro de los niños a través de clases educativas de calidad.
       </p>
       <div class="tarjetas fade-in-scroll">
-        <div class="equipo-tarjeta">
+        <div class="equipo-tarjeta fade-in-scroll">
           <img
             src="assets/img/integrante-equipo.svg"
             alt="Foto de Franco"
@@ -169,11 +197,11 @@
             tecnología.
           </p>
         </div>
-        <div class="equipo-tarjeta">
+        <div class="equipo-tarjeta fade-in-scroll">
           <img
             src="assets/img/integrante-equipo.svg"
             alt="Foto de Adrian"
-            class="imagen-integrante"
+            class="imagen-integrante fade-in-scroll"
           />
           <h2>Adrián</h2>
           <h4>Coordinador de inscripciones y recursos</h4>
@@ -189,7 +217,7 @@
         </div>
       </div>
 
-      <h2>
+      <h2 class="fade-in-scroll">
         En IABOT contamos con el profesor Alex, un apasionado de la robótica y
         la programación con amplia experiencia en la enseñanza de niños y
         jóvenes.
@@ -198,7 +226,7 @@
         <img
           src="assets/img/foto-alex.png"
           alt="Foto de Alex"
-          class="imagen-integrante"
+          class="imagen-integrante fade-in-scroll"
         />
         <div>
           <p>
@@ -221,7 +249,7 @@
     </section>
 
     <section id="cursos">
-      <h1>Nuestros cursos destacados</h1>
+      <h1 class="fade-in-scroll">Nuestros cursos destacados</h1>
       <div class="container__cursos fade-in-scroll">
         <div class="curso-tarjeta-wedo">
           <h3>Introducción a LEGO WeDo 2.0</h3>
