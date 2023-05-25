@@ -24,6 +24,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" href="css/media.css" />
@@ -53,13 +58,14 @@
             <a href="#cursos">Cursos</a>
             <a href="#inscribite">Inscripción</a>
             <a href="#redes">Contacto</a>
+            <div class="animation start-home"></div>
           </div>
         </div>
       </nav>
     </header>
-    <section id="inicio" class="inicio fade-in-scroll">
+    <section id="inicio">
       <!--<div class="fondo-inicio"></div>-->
-      <div class="descripcion-inicio">
+      <div class="descripcion-inicio fade-in-scroll">
         <h1 class="titulo-inicio">Bienvenidos a</h1>
         <img
           src="assets/Logo/Edición de logo/iabot-removebg-preview.png"
@@ -70,9 +76,9 @@
         <img src="assets/saludo-lego.png" alt="Personaje Lego Saludando" />
       </div>
     </section>
-    <section id="historia" class="seccion-historia fade-in-scroll">
+    <section id="historia" class="seccion-historia">
       <h1>Inspirando el Futuro Tecnológico</h1>
-      <div>
+      <div class="fade-in-scroll">
         <p>
           En la localidad de Mercedes, creamos una escuela de robótica con el
           objetivo de acercar la tecnología a los jóvenes.
@@ -91,9 +97,9 @@
         </p>
       </div>
     </section>
-    <section class="mision-valores fade-in-scroll">
+    <section class="mision-valores">
       <div><h1>Nuestra Misión y Valores</h1></div>
-      <div class="container-mision-valores">
+      <div class="container-mision-valores fade-in-scroll">
         <div class="mision-valores-tarjeta">
           <h2>Innovación</h2>
           <i class="fa-regular fa-lightbulb"></i>
@@ -133,7 +139,7 @@
       </div>
     </section>
 
-    <section class="equipo fade-in-scroll">
+    <section class="equipo">
       <h1>Conoce a nuestro equipo</h1>
       <p>
         En IABOT, contamos con un equipo altamente capacitado y comprometido con
@@ -152,10 +158,11 @@
           />
           <h2>Franco</h2>
           <h4>Especialista en publicidad y redes sociales</h4>
-          <p>Su experiencia en el área asegura que nuestra presencia en línea sea
-            relevante y efectiva para nuestros estudiantes y sus familias.</p>
-            
+          <p>
+            Su experiencia en el área asegura que nuestra presencia en línea sea
+            relevante y efectiva para nuestros estudiantes y sus familias.
           </p>
+
           <p>
             Su objetivo es difundir la importancia de la robótica como
             herramienta de aprendizaje y fomentar el interés de los niños en la
@@ -213,9 +220,9 @@
       </div>
     </section>
 
-    <section id="cursos fade-in-scroll">
+    <section id="cursos">
       <h1>Nuestros cursos destacados</h1>
-      <div class="container__cursos">
+      <div class="container__cursos fade-in-scroll">
         <div class="curso-tarjeta-wedo">
           <h3>Introducción a LEGO WeDo 2.0</h3>
           <img
@@ -234,14 +241,14 @@
         </div>
       </div>
     </section>
-    <section id="inscribite fade-in-scroll">
-      <div class="container__inscribite">
+    <section id="inscribite">
+      <div class="container__inscribite fade-in-scroll">
         <h1>¿Qué estás esperando? ¡Inscríbete ya!</h1>
         <button class="inscribite__boton">Inscríbete</button>
       </div>
     </section>
-    <footer class="fade-in-scroll">
-      <div class="container-footer__logo">
+    <footer>
+      <div class="container-footer__logo fade-in-scroll">
         <img
           src="assets/Logo/IA-BOT.png"
           alt="Logo IA-BOT"
@@ -258,7 +265,7 @@
             rel="noopener noreferrer"
           >
             <i class="fa-brands fa-whatsapp"></i>
-            <p class="titulo__red">+54 2324518276</p>
+            <p class="titulo__redes">+54 2324518276</p>
           </a>
         </div>
 
@@ -270,7 +277,7 @@
             rel="noopener noreferrer"
           >
             <i class="fa-brands fa-instagram"></i>
-            <p class="titulo__red">iabot.robotica</p>
+            <p class="titulo__redes">iabot.robotica</p>
           </a>
         </div>
 
@@ -282,7 +289,7 @@
             rel="noopener noreferrer"
           >
             <i class="fa-regular fa-envelope"></i>
-            <p class="titulo__red">roboticabot@gmail.com</p>
+            <p class="titulo__redes">roboticabot@gmail.com</p>
           </a>
         </div>
       </div>
