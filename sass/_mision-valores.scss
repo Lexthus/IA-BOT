@@ -1,0 +1,27 @@
+@use "variables.scss";
+
+.mision-valores {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-mision-valores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.mision-valores-tarjeta {
+  padding: 10px;
+
+  i {
+    margin: 5px 0;
+    font-size: 70px;
+    color: variables.$green;
+  }
+
+  p {
+    margin-top: 25px;
+  }
+}
+

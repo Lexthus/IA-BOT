@@ -1,0 +1,120 @@
+@use "variables.scss";
+
+.navbar-panel {
+  width: 100%;
+  position: fixed;
+  background: variables.$green;
+  display: flex;
+  justify-content: space-between;
+  z-index: 15;
+}
+
+.container-navbar__logo {
+  margin: 0 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+.navbar__logo {
+  width: auto;
+  height: 31px;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar-menu {
+  width: 555px;
+  height: 50px;
+  margin: 5px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 0;
+
+  .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+  }
+
+  a {
+    height: 100%;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: variables.$white;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+      transition: color 0.5s;
+    }
+
+    &:nth-child(1) {
+      width: 90px;
+    }
+
+    &:nth-child(2) {
+      width: 120px;
+    }
+
+    &:nth-child(3) {
+      width: 95px;
+    }
+
+    &:nth-child(4) {
+      width: 130px;
+    }
+
+    &:nth-child(5) {
+      width: 120px;
+    }
+  }
+
+  .start-inicio,
+  a:nth-child(1):hover ~ .animation {
+    width: 90px;
+    left: 0;
+    background-color: variables.$wedo;
+  }
+
+  .start-acerca_de,
+  a:nth-child(2):hover ~ .animation {
+    width: 120px;
+    left: 90px;
+    background-color: variables.$spike;
+  }
+
+  .start-cursos,
+  a:nth-child(3):hover ~ .animation {
+    width: 95px;
+    left: 210px;
+    background-color: variables.$wedo;
+  }
+
+  .start-inscribite,
+  a:nth-child(4):hover ~ .animation {
+    width: 130px;
+    left: 305px;
+    background-color: variables.$spike;
+  }
+
+  .start-redes,
+  a:nth-child(5):hover ~ .animation {
+    width: 120px;
+    left: 435px;
+    background-color: variables.$wedo;
+  }
+}

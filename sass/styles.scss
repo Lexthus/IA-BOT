@@ -1,0 +1,79 @@
+@use "reset.scss";
+@use "variables.scss";
+@use "elementos-javascript";
+@use "nav-bar";
+@use "inicio.scss";
+@use "historia.scss";
+@use "mision-valores.scss";
+@use "equipo.scss";
+@use "cursos.scss";
+@use "inscribite.scss";
+@use "footer.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: variables.$light-beige;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+section {
+  padding: 5px 50px;
+  text-align: center;
+  background: variables.$white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+:target {
+  scroll-margin-top: 60px;
+}
+
+/* Toggler */
+
+#toggler {
+  .navbar-menu label {
+    display: none;
+  }
+}
