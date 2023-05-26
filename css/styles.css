@@ -34,6 +34,11 @@
   text-align: center;
   align-items: center;
 }
+@media only screen and (max-width: 600px) {
+  .navbar__logo {
+    height: 25px;
+  }
+}
 
 .navbar-menu {
   width: 555px;
@@ -86,6 +91,12 @@
 .navbar-menu a:nth-child(5) {
   width: 120px;
 }
+@media only screen and (max-width: 600px) {
+  .navbar-menu a {
+    margin: 10px;
+    font-size: 24px;
+  }
+}
 .navbar-menu .start-inicio,
 .navbar-menu a:nth-child(1):hover ~ .animation {
   width: 90px;
@@ -116,6 +127,11 @@
   left: 435px;
   background-color: #68c3e2;
 }
+@media only screen and (max-width: 600px) {
+  .navbar-menu {
+    display: none;
+  }
+}
 
 #inicio {
   padding: 0;
@@ -143,6 +159,17 @@
   margin: 10px;
   animation-duration: 2s;
 }
+@media only screen and (max-width: 600px) {
+  .descripcion-inicio img {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .descripcion-inicio {
+    width: 100%;
+    padding: 10px;
+  }
+}
 
 .titulo-inicio {
   text-align: center;
@@ -153,11 +180,21 @@
   margin: 10px;
   animation-duration: 2s;
 }
+@media only screen and (max-width: 600px) {
+  .titulo-inicio {
+    font-size: x-large;
+  }
+}
 
 .descripcion-inicio-container_imagen {
   position: absolute;
   right: 0;
   animation-duration: 2s;
+}
+@media only screen and (max-width: 600px) {
+  .descripcion-inicio-container_imagen {
+    position: relative;
+  }
 }
 
 #historia {
@@ -208,12 +245,26 @@
   gap: 50px;
   padding: 20px;
 }
+@media only screen and (max-width: 600px) {
+  .tarjetas {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
 
 .equipo-tarjeta_ancha {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  margin: 30px 0;
+}
+@media only screen and (max-width: 600px) {
+  .equipo-tarjeta_ancha {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .imagen-integrante {
@@ -221,6 +272,13 @@
   max-width: 320px;
   border-radius: 50%;
   border: 6px solid #57b932;
+}
+@media only screen and (max-width: 600px) {
+  .imagen-integrante {
+    width: 80%;
+    max-width: 200px;
+    margin-top: 15px;
+  }
 }
 
 .inscribite {
@@ -237,6 +295,11 @@
   gap: 30px;
   margin-top: 60px;
 }
+@media only screen and (max-width: 1024px) {
+  .container__cursos {
+    gap: 40px;
+  }
+}
 
 .curso-tarjeta-wedo,
 .curso-tarjeta-spike {
@@ -247,21 +310,35 @@
   border-radius: 2%;
   padding: 30px 0;
 }
+@media only screen and (max-width: 1024px) {
+  .curso-tarjeta-wedo,
+  .curso-tarjeta-spike {
+    padding: 20px;
+  }
+}
 
 .curso-tarjeta-wedo {
   background-color: #68c3e2;
-}
-.curso-tarjeta-wedo h3 {
-  padding: 15px;
-  color: white;
 }
 
 .curso-tarjeta-spike {
   background-color: #ffd501;
 }
-.curso-tarjeta-spike h3 {
+
+.curso-tarjeta-wedo h3, .curso-tarjeta-spike h3 {
   padding: 15px;
   color: white;
+}
+@media only screen and (max-width: 1024px) {
+  .curso-tarjeta-wedo h3, .curso-tarjeta-spike h3 {
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .curso-tarjeta-wedo, .curso-tarjeta-spike {
+    padding: 20px;
+  }
 }
 
 .curso-tarjeta i {
@@ -301,6 +378,13 @@
   background-color: darkgreen;
   cursor: pointer;
 }
+@media only screen and (max-width: 1024px) {
+  .inscribite__boton {
+    font-size: 1em;
+    padding: 10px;
+    margin: 30px;
+  }
+}
 
 footer {
   width: 100%;
@@ -313,6 +397,11 @@ footer {
   background: #57b932;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
 
 .container-footer__logo {
   margin: 0 15px;
@@ -323,12 +412,22 @@ footer {
   align-items: center;
   z-index: 20;
 }
+@media only screen and (max-width: 600px) {
+  .container-footer__logo {
+    margin: 0;
+  }
+}
 
 .footer__logo {
   width: auto;
   height: 10vh;
   text-align: center;
   align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .footer__logo {
+    height: 9vh;
+  }
 }
 
 .footer__fecha {
@@ -338,12 +437,23 @@ footer {
   margin-block-end: 0.5em;
   color: #f2f2f2;
 }
+@media only screen and (max-width: 600px) {
+  .footer__fecha {
+    font-size: 2.5vh;
+  }
+}
 
 #redes {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   padding: 16px 0;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 600px) {
+  #redes {
+    padding: 10px 0;
+    justify-content: center;
+  }
 }
 
 .container__whatsapp,
@@ -353,6 +463,13 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .container__whatsapp,
+  .container__instagram,
+  .container__email {
+    font-size: 20px;
+  }
 }
 
 .whastapp,
@@ -373,6 +490,11 @@ footer {
 .titulo__redes {
   color: #f2f2f2;
   padding-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .titulo__redes {
+    padding-left: 5px;
+  }
 }
 
 html {
@@ -398,6 +520,11 @@ section {
   text-align: center;
   background: #f2f2f2;
 }
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 20px;
+  }
+}
 
 form {
   display: flex;
@@ -408,14 +535,31 @@ h1 {
   font-size: 48px;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
 
 h2 {
   font-size: 36px;
   margin: 20px;
 }
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+    margin: 10px;
+  }
+}
 
 h3 {
   font-size: 24px;
+}
+@media only screen and (max-width: 600px) {
+  h3 {
+    font-size: 20px;
+  }
 }
 
 p {
@@ -423,6 +567,12 @@ p {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
+}
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
 }
 
 a {

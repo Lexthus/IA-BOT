@@ -32,6 +32,10 @@ section {
   padding: 5px 50px;
   text-align: center;
   background: variables.$white;
+
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
+  }
 }
 
 form {
@@ -42,15 +46,29 @@ form {
 h1 {
   font-size: 48px;
   margin-bottom: 30px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 }
 
 h2 {
   font-size: 36px;
   margin: 20px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 24px;
+    margin: 10px;
+  }
 }
 
 h3 {
   font-size: 24px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+  }
 }
 
 p {
@@ -58,6 +76,11 @@ p {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 16px;
+    margin: 10px 0;
+  }
 }
 
 a {

@@ -22,6 +22,10 @@
   height: 31px;
   text-align: center;
   align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    height: 25px;
+  }
 }
 
 .navbar-menu {
@@ -81,6 +85,11 @@
     &:nth-child(5) {
       width: 120px;
     }
+
+    @media only screen and (max-width: 600px) {
+      margin: 10px;
+    font-size: 24px;
+    }
   }
 
   .start-inicio,
@@ -116,5 +125,9 @@
     width: 120px;
     left: 435px;
     background-color: variables.$wedo;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: none;
   }
 }

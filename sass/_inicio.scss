@@ -26,6 +26,15 @@
     width: 400px;
     margin: 10px;
     animation-duration: 2s;
+
+    @media only screen and (max-width: 600px) {
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    padding: 10px;
   }
 }
 
@@ -37,10 +46,18 @@
   font-size: xx-large;
   margin: 10px;
   animation-duration: 2s;
+
+  @media only screen and (max-width: 600px) {
+    font-size: x-large;
+  }
 }
 
 .descripcion-inicio-container_imagen {
   position: absolute;
   right: 0;
   animation-duration: 2s;
+
+  @media only screen and (max-width: 600px) {
+    position: relative;
+  }
 }
