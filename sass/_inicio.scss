@@ -27,12 +27,13 @@
     margin: 10px;
     animation-duration: 2s;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
       margin: 0;
+      max-width: 250px;
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     width: 100%;
     padding: 10px;
   }
@@ -47,7 +48,7 @@
   margin: 10px;
   animation-duration: 2s;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     font-size: x-large;
   }
 }
@@ -57,7 +58,7 @@
   right: 0;
   animation-duration: 2s;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     position: relative;
   }
 }

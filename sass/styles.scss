@@ -33,7 +33,7 @@ section {
   text-align: center;
   background: variables.$white;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     padding: 20px;
   }
 }
@@ -47,7 +47,7 @@ h1 {
   font-size: 48px;
   margin-bottom: 30px;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     font-size: 32px;
     margin-bottom: 20px;
   }
@@ -57,7 +57,7 @@ h2 {
   font-size: 36px;
   margin: 20px;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     font-size: 24px;
     margin: 10px;
   }
@@ -66,7 +66,7 @@ h2 {
 h3 {
   font-size: 24px;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     font-size: 20px;
   }
 }
@@ -77,7 +77,7 @@ p {
   font-weight: 600;
   line-height: 1.5;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     font-size: 16px;
     margin: 10px 0;
   }

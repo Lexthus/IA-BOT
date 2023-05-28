@@ -11,8 +11,7 @@
 }
 
 .container-navbar__logo {
-  margin: 0 15px;
-  padding: 15px;
+  margin: 15px;
   display: flex;
   align-items: center;
   z-index: 20;
@@ -20,74 +19,93 @@
 
 .navbar__logo {
   width: auto;
-  height: 31px;
+  height: 30px;
   text-align: center;
   align-items: center;
-
-  @media only screen and (max-width: 600px) {
-    height: 25px;
-  }
 }
 
 .burger {
   position: relative;
-  margin: 0 15px;
   width: 40px;
   height: 30px;
+  margin: 15px;
   background: transparent;
   cursor: pointer;
-  display: block;
-}
-
-.burger input {
   display: none;
-}
 
-.burger span {
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background: black;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
 
-.burger span:nth-of-type(1) {
-  top: 0px;
-  transform-origin: left center;
-}
+  input {
+    display: none;
 
-.burger span:nth-of-type(2) {
-  top: 50%;
-  transform: translateY(-50%);
-  transform-origin: left center;
-}
+    &:checked ~ span:nth-of-type(1) {
+      transform: rotate(45deg);
+      top: 0px;
+      left: 5px;
+      background: white;
+    }
 
-.burger span:nth-of-type(3) {
-  top: 100%;
-  transform-origin: left center;
-  transform: translateY(-100%);
-}
+    &:checked ~ span:nth-of-type(2) {
+      width: 0%;
+      opacity: 0;
+    }
 
-.burger input:checked ~ span:nth-of-type(1) {
-  transform: rotate(45deg);
-  top: 0px;
-  left: 5px;
-}
+    &:checked ~ span:nth-of-type(3) {
+      transform: rotate(-45deg);
+      top: 28px;
+      left: 5px;
+      background: white;
+    }
+  }
 
-.burger input:checked ~ span:nth-of-type(2) {
-  width: 0%;
-  opacity: 0;
-}
+  span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
 
-.burger input:checked ~ span:nth-of-type(3) {
-  transform: rotate(-45deg);
-  top: 28px;
-  left: 5px;
+    &:nth-of-type(1) {
+      top: 0px;
+      transform-origin: left center;
+    }
+
+    &:nth-of-type(2) {
+      top: 50%;
+      transform: translateY(-50%);
+      transform-origin: left center;
+    }
+
+    &:nth-of-type(3) {
+      top: 100%;
+      transform-origin: left center;
+      transform: translateY(-100%);
+    }
+  }
+
+  .activeline1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px);
+    background: white;
+    z-index: 200;
+  }
+
+  .activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+  }
+
+  .activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-4px, 2px);
+    background: white;
+    z-index: 200;
+  }
 }
 
 .navbar-menu {
@@ -130,27 +148,48 @@
 
     &:nth-child(1) {
       width: 90px;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
     }
 
     &:nth-child(2) {
       width: 120px;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
     }
 
     &:nth-child(3) {
       width: 95px;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
     }
 
     &:nth-child(4) {
       width: 130px;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
     }
 
     &:nth-child(5) {
       width: 120px;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
       margin: 10px;
-    font-size: 24px;
+      font-size: 12px;
+      /*display: none;*/
     }
   }
 
@@ -189,7 +228,27 @@
     background-color: variables.$wedo;
   }
 
-  @media only screen and (max-width: 600px) {
-    display: none;
+  @media only screen and (max-width: 768px) {
+    opacity: 0;
+    visibility: hidden;
+    width: 200px;
+    height: auto;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    /*right: 0;*/
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: end;
+    background-color: black;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu.visible {
+    opacity: 1;
+    visibility: visible;
   }
 }
