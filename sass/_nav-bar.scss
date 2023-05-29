@@ -26,8 +26,8 @@
 
 .burger {
   position: relative;
-  width: 40px;
-  height: 30px;
+  width: 32px;
+  height: 24px;
   margin: 15px;
   background: transparent;
   cursor: pointer;
@@ -54,7 +54,7 @@
 
     &:checked ~ span:nth-of-type(3) {
       transform: rotate(-45deg);
-      top: 28px;
+      top: 23px;
       left: 5px;
       background: white;
     }
