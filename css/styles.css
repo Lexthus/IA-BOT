@@ -23,7 +23,7 @@
 }
 
 .container-navbar__logo {
-  margin: 10px 15px;
+  margin: 10px 20px;
   display: flex;
   align-items: center;
   z-index: 20;
@@ -40,7 +40,7 @@
   position: relative;
   width: 32px;
   height: 24px;
-  margin: 10px 15px;
+  margin: 10px 20px;
   background: transparent;
   cursor: pointer;
   display: none;
