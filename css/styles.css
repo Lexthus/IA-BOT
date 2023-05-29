@@ -13,6 +13,7 @@
 
 .navbar-panel {
   width: 100%;
+  height: 60px;
   position: fixed;
   background: #57b932;
   display: flex;
@@ -22,7 +23,7 @@
 }
 
 .container-navbar__logo {
-  margin: 15px;
+  margin: 10px 15px;
   display: flex;
   align-items: center;
   z-index: 20;
@@ -30,7 +31,7 @@
 
 .navbar__logo {
   width: auto;
-  height: 30px;
+  height: 34px;
   text-align: center;
   align-items: center;
 }
@@ -39,7 +40,7 @@
   position: relative;
   width: 32px;
   height: 24px;
-  margin: 15px;
+  margin: 10px 15px;
   background: transparent;
   cursor: pointer;
   display: none;
