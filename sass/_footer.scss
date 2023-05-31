@@ -8,7 +8,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  background: #57b932;
+  background: variables.$green;
   text-align: center;
 
   @media only screen and (max-width: 768px) {

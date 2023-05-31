@@ -198,7 +198,7 @@
   a:nth-child(1):hover ~ .animation {
     width: 90px;
     left: 0;
-    background-color: variables.$wedo;
+    background-color: variables.$spike;
   }
 
   .start-acerca_de,
@@ -212,7 +212,7 @@
   a:nth-child(3):hover ~ .animation {
     width: 95px;
     left: 210px;
-    background-color: variables.$wedo;
+    background-color: variables.$spike;
   }
 
   .start-inscribite,
@@ -226,7 +226,7 @@
   a:nth-child(5):hover ~ .animation {
     width: 120px;
     left: 435px;
-    background-color: variables.$wedo;
+    background-color: variables.$spike;
   }
 
   @media only screen and (max-width: 768px) {

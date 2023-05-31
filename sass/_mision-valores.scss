@@ -14,14 +14,31 @@
 .mision-valores-tarjeta {
   padding: 10px;
 
-  i {
+  .fa-lightbulb {
     margin: 5px 0;
     font-size: 70px;
-    color: variables.$green;
+    color: variables.$wedo;
+  }
+
+  .fa-heart {
+    margin: 5px 0;
+    font-size: 70px;
+    color: variables.$red;
+  }
+
+  .fa-star {
+    margin: 5px 0;
+    font-size: 70px;
+    color: variables.$violet;
+  }
+
+  .fa-face-smile-beam {
+    margin: 5px 0;
+    font-size: 70px;
+    color: variables.$spike;
   }
 
   p {
     margin-top: 25px;
   }
 }
-
