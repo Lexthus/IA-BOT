@@ -28,28 +28,28 @@ footer {
   @media only screen and (max-width: 768px) {
     margin: 0;
   }
-}
 
-.footer__logo {
-  width: auto;
-  height: 10vh;
-  text-align: center;
-  align-items: center;
+  img {
+    width: auto;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
 
-  @media only screen and (max-width: 768px) {
-    height: 9vh;
+    @media only screen and (max-width: 768px) {
+      height: 9vh;
+    }
   }
-}
 
-.footer__fecha {
-  font-size: 3vh;
-  display: block;
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
-  color: variables.$white;
+  p {
+    font-size: 3vh;
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    color: variables.$white;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 2.5vh;
+    @media only screen and (max-width: 768px) {
+      font-size: 2.5vh;
+    }
   }
 }
 
@@ -76,28 +76,24 @@ footer {
   @media only screen and (max-width: 768px) {
     font-size: 20px;
   }
-}
 
-.whastapp,
-.instagram,
-.email {
-  display: flex;
-  justify-content: center;
-}
+  a {
+    display: flex;
+    justify-content: center;
+  }
 
-.fa-whatsapp,
-.fa-instagram,
-.fa-envelope {
-  display: flex;
-  align-items: center;
-  color: variables.$white;
-}
+  p {
+    color: variables.$white;
+    padding-left: 10px;
 
-.titulo__redes {
-  color: variables.$white;
-  padding-left: 10px;
+    @media only screen and (max-width: 768px) {
+      padding-left: 5px;
+    }
+  }
 
-  @media only screen and (max-width: 768px) {
-    padding-left: 5px;
+  i {
+    display: flex;
+    align-items: center;
+    color: variables.$white;
   }
 }

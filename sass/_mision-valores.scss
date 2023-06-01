@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.container-mision-valores {
+.mision-valores-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
@@ -14,27 +14,24 @@
 .mision-valores-tarjeta {
   padding: 10px;
 
-  .fa-lightbulb {
+  i {
     margin: 5px 0;
     font-size: 70px;
+  }
+
+  .fa-lightbulb {
     color: variables.$wedo;
   }
 
   .fa-heart {
-    margin: 5px 0;
-    font-size: 70px;
     color: variables.$red;
   }
 
   .fa-star {
-    margin: 5px 0;
-    font-size: 70px;
     color: variables.$violet;
   }
 
-  .fa-face-smile-beam {
-    margin: 5px 0;
-    font-size: 70px;
+  .fa-smile-beam {
     color: variables.$spike;
   }
 

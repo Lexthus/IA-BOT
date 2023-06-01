@@ -19,8 +19,22 @@
       width: 100%;
     }*/
 
-.descripcion-inicio {
+.inicio-descripcion {
   padding: 80px;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: xx-large;
+    margin: 10px;
+    animation-duration: 2s;
+
+    @media only screen and (max-width: 768px) {
+      font-size: x-large;
+    }
+  }
 
   img {
     width: 400px;
@@ -39,21 +53,7 @@
   }
 }
 
-.titulo-inicio {
-  text-align: center;
-  text-transform: uppercase;
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: xx-large;
-  margin: 10px;
-  animation-duration: 2s;
-
-  @media only screen and (max-width: 768px) {
-    font-size: x-large;
-  }
-}
-
-.descripcion-inicio-container_imagen {
+.inicio-descripcion-container_imagen {
   position: absolute;
   right: 0;
   animation-duration: 2s;

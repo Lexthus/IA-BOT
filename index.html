@@ -4,19 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="keywords"
-      content="talleres, programación, robótica, educación, tecnología"
+      name="description"
+      content="Cursos de robótica en LEGO para niños. Aprende programación y resolución de problemas con IABOT."
     />
     <meta
-      property="og:description"
-      name="description"
-      content="IABOT ofrece cursos de robótica en LEGO para niños, fomentando su creatividad y habilidades en programación y resolución de problemas."
+      name="keywords"
+      content="talleres, programación, robótica, educación, tecnología, LEGO, niños"
     />
     <meta name="author" content="Pereyra Alex" />
-    <title>IABOT - Curso de Robótica en LEGO para Niños</title>
-    <meta property="og:title" content="IA-BOT" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="IA-BOT" />
+    <title>IABOT - Cursos de Robótica en LEGO para Niños</title>
     <link rel="icon" href="assets/IA-BOT.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -44,38 +39,31 @@
 
   <body>
     <header>
-      <nav>
-        <div class="navbar-panel">
-          <div class="container-navbar__logo">
-            <a href="index.html">
-              <img
-                class="navbar__logo"
-                alt="Logo de IABOT"
-                src="assets/IABOT.jpg"
-              />
-            </a>
-          </div>
-          <label class="burger" for="burger">
-            <input type="checkbox" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="navbar-menu" id="navbar-menu">
-            <a href="#inicio">Inicio</a>
-            <a href="#historia">Acerca de</a>
-            <a href="#cursos">Cursos</a>
-            <a href="#inscribite">Inscripción</a>
-            <a href="#redes">Contacto</a>
-            <div class="animation start-home"></div>
-          </div>
-        </div>
+      <div class="header-logo">
+        <a href="index.html">
+          <img alt="Logo de IABOT" src="assets/IABOT.jpg" />
+        </a>
+      </div>
+      <label class="burger" for="burger">
+        <input type="checkbox" id="burger" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav id="navbar-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Acerca de</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#inscribite">Inscripción</a>
+        <a href="#redes">Contacto</a>
+        <div class="animation start-home"></div>
       </nav>
     </header>
+
     <section id="inicio">
       <!--<div class="fondo-inicio"></div>-->
-      <div class="descripcion-inicio">
-        <h1 class="titulo-inicio animate__backInLeft">Bienvenidos a</h1>
+      <div class="inicio-descripcion">
+        <h1 class="animate__backInLeft">Bienvenidos a</h1>
         <img
           class="animate__backInLeft"
           src="assets/IABOT Robotica Educativa.png"
@@ -83,7 +71,7 @@
         />
       </div>
       <div
-        class="descripcion-inicio-container_imagen fade-in-scroll animate__shakeY"
+        class="inicio-descripcion-container_imagen fade-in-scroll animate__shakeY"
       >
         <img src="assets/saludo-lego.png" alt="Personaje Lego Saludando" />
       </div>
@@ -109,12 +97,13 @@
         </p>
       </div>
     </section>
+
     <section class="mision-valores">
       <div class="fade-in-scroll"><h1>Nuestra Misión y Valores</h1></div>
-      <div class="container-mision-valores fade-in-scroll">
+      <div class="mision-valores-container fade-in-scroll">
         <div class="mision-valores-tarjeta">
           <h2>Innovación</h2>
-          <i class="fa-regular fa-lightbulb"></i>
+          <i class="fas fa-lightbulb"></i>
           <p>
             Nos mantenemos al día en las últimas tendencias y tecnologías de la
             robótica para ofrecer a nuestros estudiantes una educación de
@@ -123,7 +112,7 @@
         </div>
         <div class="mision-valores-tarjeta">
           <h2>Pasión</h2>
-          <i class="fa-regular fa-heart"></i>
+          <i class="fas fa-heart"></i>
           <p>
             Transmitimos nuestra pasión por la robótica y la educación,
             motivando a nuestros estudiantes y fomentando su interés en ciencia
@@ -132,7 +121,7 @@
         </div>
         <div class="mision-valores-tarjeta">
           <h2>Excelencia</h2>
-          <i class="fa-regular fa-star"></i>
+          <i class="fas fa-star"></i>
           <p>
             Nos dedicamos a brindar un servicio excepcional, cuidando cada
             detalle, desde el diseño del curso hasta la atención a nuestros
@@ -141,7 +130,7 @@
         </div>
         <div class="mision-valores-tarjeta">
           <h2>Diversión</h2>
-          <i class="fa-regular fa-face-smile-beam"></i>
+          <i class="fas fa-smile-beam"></i>
           <p>
             Creamos un ambiente de enseñanza amigable y relajado, donde los
             estudiantes se sienten cómodos y disfrutan de un aprendizaje
@@ -163,11 +152,7 @@
       </p>
       <div class="tarjetas fade-in-scroll">
         <div class="equipo-tarjeta fade-in-scroll">
-          <img
-            src="assets/img/integrante-equipo.svg"
-            alt="Foto de Franco"
-            class="imagen-integrante"
-          />
+          <img src="assets/img/franco-foto.svg" alt="Foto de Franco" />
           <h2>Franco</h2>
           <h4>Especialista en publicidad y redes sociales</h4>
           <p>
@@ -182,11 +167,7 @@
           </p>
         </div>
         <div class="equipo-tarjeta fade-in-scroll">
-          <img
-            src="assets/img/integrante-equipo.svg"
-            alt="Foto de Adrian"
-            class="imagen-integrante fade-in-scroll"
-          />
+          <img src="assets/img/adrian-foto.svg" alt="Foto de Adrian" />
           <h2>Adrián</h2>
           <h4>Coordinador de inscripciones y recursos</h4>
           <p>
@@ -207,11 +188,7 @@
         jóvenes.
       </h2>
       <div class="equipo-tarjeta_ancha fade-in-scroll">
-        <img
-          src="assets/img/foto-alex.png"
-          alt="Foto de Alex"
-          class="imagen-integrante fade-in-scroll"
-        />
+        <img src="assets/img/alex-foto.png" alt="Foto de Alex" />
         <div>
           <p>
             Alex en IABOT cree firmemente en el poder de la robótica como
@@ -232,80 +209,69 @@
       </div>
     </section>
 
-    <section id="cursos">
-      <h1 class="fade-in-scroll">Nuestros cursos destacados</h1>
-      <div class="container__cursos fade-in-scroll">
+    <section id="cursos" class="fade-in-scroll">
+      <h1>Nuestros cursos destacados</h1>
+      <div class="container__cursos">
         <div class="curso-tarjeta-wedo">
           <h3>Introducción a LEGO WeDo 2.0</h3>
-          <img
-            src="assets/img/wedo.png"
-            alt="LEGO WeDo 2.0"
-            class="curso-imagen"
-          />
+          <img src="assets/img/wedo.png" alt="LEGO WeDo 2.0" />
         </div>
         <div class="curso-tarjeta-spike">
           <h3>Robótica avanzada con LEGO Spike</h3>
-          <img
-            src="assets/img/spike.png"
-            alt="LEGO Spike Essential"
-            class="curso-imagen"
-          />
+          <img src="assets/img/spike.png" alt="LEGO Spike Essential" />
         </div>
       </div>
     </section>
-    <section id="inscribite">
-      <div class="container__inscribite fade-in-scroll">
+
+    <section id="inscribite" class="fade-in-scroll">
+      <div class="container__inscribite">
         <h1>¿Qué estás esperando? ¡Inscríbete ya!</h1>
         <button class="inscribite__boton">Inscríbete</button>
       </div>
     </section>
+
     <footer>
       <div class="container-footer__logo fade-in-scroll">
-        <img
-          src="assets/IABOT.jpg"
-          alt="Logo IA-BOT"
-          class="footer__logo"
-        />
-        <p class="footer__fecha">© 2022 - 2023</p>
+        <img src="assets/IABOT.jpg" alt="Logo IA-BOT" />
+        <p>© 2022 - 2023</p>
       </div>
+
       <div id="redes">
-        <div class="container__whatsapp">
+        <div class="container__whatsapp fade-in-scroll">
           <a
             href="https://api.whatsapp.com/send/?phone=542324468366&text=Hola%21+Me+interesar%C3%ADa+poder+recibir+m%C3%A1s+informaci%C3%B3n+sobre+los+talleres+de+rob%C3%B3tica..+&app_absent=0"
-            class="whatsapp"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i class="fa-brands fa-whatsapp"></i>
-            <p class="titulo__redes">+54 2324518276</p>
+            <p>+54 2324518276</p>
           </a>
         </div>
 
-        <div class="container__instagram">
+        <div class="container__instagram fade-in-scroll">
           <a
             href="https://www.instagram.com/iabot.robotica/"
-            class="instagram"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i class="fa-brands fa-instagram"></i>
-            <p class="titulo__redes">iabot.robotica</p>
+            <p>iabot.robotica</p>
           </a>
         </div>
 
-        <div class="container__email">
+        <div class="container__email fade-in-scroll">
           <a
-            href="mailto:elcorreoquequieres@correo.com"
-            class="email"
+            href="mailto:roboticabot@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i class="fa-regular fa-envelope"></i>
-            <p class="titulo__redes">roboticabot@gmail.com</p>
+            <p>roboticabot@gmail.com</p>
           </a>
         </div>
       </div>
     </footer>
+
     <script src="main.js"></script>
     <script
       src="https://kit.fontawesome.com/dd85322e97.js"

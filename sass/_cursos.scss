@@ -29,7 +29,6 @@
   padding: 30px 0;
 
   @media only screen and (max-width: 1024px) {
-    
     padding: 20px;
   }
 }
@@ -40,10 +39,10 @@
 
 .curso-tarjeta-spike {
   background-color: variables.$spike;
-  
 }
 
-.curso-tarjeta-wedo, .curso-tarjeta-spike {
+.curso-tarjeta-wedo,
+.curso-tarjeta-spike {
   h3 {
     padding: 15px;
     color: white;
@@ -54,18 +53,14 @@
     }
   }
 
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 30px 0;
+    border-radius: 20%;
+  }
+
   @media only screen and (max-width: 1024px) {
     padding: 20px;
-  }  
-}
-
-.curso-tarjeta i {
-  font-size: 100px;
-}
-
-.curso-imagen {
-  width: 150px;
-  height: 150px;
-  margin: 30px 0;
-  border-radius: 20%;
+  }
 }
