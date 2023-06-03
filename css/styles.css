@@ -12,13 +12,16 @@
 }
 
 .burger {
-  position: relative;
+  position: absolute;
+  top: 10px;
+  right: 0;
   width: 32px;
   height: 24px;
   margin: 10px 20px;
   background: transparent;
   cursor: pointer;
   display: none;
+  z-index: 9999;
 }
 @media only screen and (max-width: 768px) {
   .burger {
@@ -164,8 +167,10 @@ nav a:nth-child(5) {
 @media only screen and (max-width: 768px) {
   nav a {
     margin: 10px;
-    font-size: 12px;
     /*display: none;*/
+  }
+  nav a:hover {
+    color: #ffd501;
   }
 }
 nav .start-inicio,
@@ -204,17 +209,19 @@ nav a:nth-child(5):hover ~ .animation {
     visibility: visible;
     width: 200px;
     height: auto;
-    padding: 2rem;
+    padding: 3.5rem 0;
     position: absolute;
     top: 0;
-    left: 0;
-    bottom: 0;
+    right: 0;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    align-items: end;
-    background-color: black;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  nav .animation {
+    display: none;
   }
 }
 
