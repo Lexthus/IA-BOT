@@ -11,81 +11,20 @@
   align-items: center;
 }
 
-.burger {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  width: 32px;
-  height: 24px;
-  margin: 10px 20px;
-  background: transparent;
-  cursor: pointer;
+#abrir-menu {
+  background-color: transparent;
+  border: none;
+  padding: 10px 24px;
+  color: #222222;
   display: none;
-  z-index: 9999;
 }
-@media only screen and (max-width: 768px) {
-  .burger {
+#abrir-menu i {
+  font-size: 27px;
+}
+@media screen and (max-width: 768px) {
+  #abrir-menu {
     display: block;
   }
-}
-.burger input {
-  display: none;
-}
-.burger input:checked ~ span:nth-of-type(1) {
-  transform: rotate(45deg);
-  top: 0px;
-  left: 5px;
-  background: white;
-}
-.burger input:checked ~ span:nth-of-type(2) {
-  width: 0%;
-  opacity: 0;
-}
-.burger input:checked ~ span:nth-of-type(3) {
-  transform: rotate(-45deg);
-  top: 23px;
-  left: 5px;
-  background: white;
-}
-.burger span {
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background: black;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: 0.25s ease-in-out;
-}
-.burger span:nth-of-type(1) {
-  top: 0px;
-  transform-origin: left center;
-}
-.burger span:nth-of-type(2) {
-  top: 50%;
-  transform: translateY(-50%);
-  transform-origin: left center;
-}
-.burger span:nth-of-type(3) {
-  top: 100%;
-  transform-origin: left center;
-  transform: translateY(-100%);
-}
-.burger .activeline1__bars-menu {
-  transform: rotate(45deg) translate(-2px, 1px);
-  background: white;
-  z-index: 200;
-}
-.burger .activeline2__bars-menu {
-  opacity: 0;
-  margin-left: -30px;
-}
-.burger .activeline3__bars-menu {
-  transform: rotate(-45deg) translate(-4px, 2px);
-  background: white;
-  z-index: 200;
 }
 
 nav {
@@ -99,16 +38,23 @@ nav {
   border-radius: 8px;
   font-size: 0;
 }
-nav .animation {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  z-index: 0;
-  transition: all 0.5s ease 0s;
-  border-radius: 8px;
+nav #cerrar-menu {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  color: #f2f2f2;
+}
+nav #cerrar-menu i {
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  nav #cerrar-menu {
+    display: block;
+    z-index: 9999;
+  }
 }
 nav a {
-  height: 100%;
   line-height: 50px;
   font-size: 15px;
   font-weight: bold;
@@ -124,113 +70,86 @@ nav a:hover {
   color: black;
   transition: color 0.5s;
 }
-nav a:nth-child(1) {
+nav a:nth-child(2) {
   width: 90px;
 }
-@media screen and (max-width: 768px) {
-  nav a:nth-child(1) {
-    width: 80%;
-  }
-}
-nav a:nth-child(2) {
-  width: 120px;
-}
-@media screen and (max-width: 768px) {
-  nav a:nth-child(2) {
-    width: 80%;
-  }
-}
 nav a:nth-child(3) {
-  width: 95px;
-}
-@media screen and (max-width: 768px) {
-  nav a:nth-child(3) {
-    width: 80%;
-  }
+  width: 120px;
 }
 nav a:nth-child(4) {
-  width: 130px;
-}
-@media screen and (max-width: 768px) {
-  nav a:nth-child(4) {
-    width: 80%;
-  }
+  width: 95px;
 }
 nav a:nth-child(5) {
+  width: 130px;
+}
+nav a:nth-child(6) {
   width: 120px;
 }
-@media screen and (max-width: 768px) {
-  nav a:nth-child(5) {
-    width: 80%;
-  }
-}
 @media only screen and (max-width: 768px) {
-  nav a {
-    margin: 10px;
-    /*display: none;*/
-  }
   nav a:hover {
     color: #ffd501;
   }
 }
-nav .start-inicio,
-nav a:nth-child(1):hover ~ .animation {
+nav a:nth-child(2):hover ~ .animation {
   width: 90px;
   left: 0;
   background-color: #ffd501;
 }
-nav .start-acerca_de,
-nav a:nth-child(2):hover ~ .animation {
+nav a:nth-child(3):hover ~ .animation {
   width: 120px;
   left: 90px;
   background-color: #ffd501;
 }
-nav .start-cursos,
-nav a:nth-child(3):hover ~ .animation {
+nav a:nth-child(4):hover ~ .animation {
   width: 95px;
   left: 210px;
   background-color: #ffd501;
 }
-nav .start-inscribite,
-nav a:nth-child(4):hover ~ .animation {
+nav a:nth-child(5):hover ~ .animation {
   width: 130px;
   left: 305px;
   background-color: #ffd501;
 }
-nav .start-redes,
-nav a:nth-child(5):hover ~ .animation {
+nav a:nth-child(6):hover ~ .animation {
   width: 120px;
   left: 435px;
   background-color: #ffd501;
 }
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
 @media only screen and (max-width: 768px) {
   nav {
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     width: 200px;
-    height: auto;
-    padding: 3.5rem 0;
+    height: 98vh;
     position: absolute;
     top: 0;
     right: 0;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    align-items: end;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+    transition: opacity 0.5s ease;
   }
   nav .animation {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .navbar-menu.visible {
-    opacity: 1;
-    visibility: visible;
-  }
+nav.visible {
+  opacity: 1;
+  visibility: visible;
 }
+
 #inicio {
   padding: 0;
   min-height: 100vh;
