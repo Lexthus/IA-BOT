@@ -4,7 +4,6 @@
   margin: 10px 20px;
   display: flex;
   align-items: center;
-  z-index: 20;
 
   img {
     width: auto;
@@ -40,6 +39,7 @@ nav {
   align-items: center;
   border-radius: 8px;
   font-size: 0;
+  z-index: 100;
 
   #cerrar-menu {
     display: none;
