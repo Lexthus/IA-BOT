@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header-logo {
   margin: 10px 20px;
   display: flex;
@@ -27,7 +28,7 @@
 }
 
 nav {
-  width: 555px;
+  width: 435px;
   height: 50px;
   margin: 5px;
   position: relative;
@@ -37,12 +38,17 @@ nav {
   border-radius: 8px;
   font-size: 0;
   z-index: 100;
+  /*a:nth-child(6):hover ~ .animation {
+    width: 120px;
+    left: 435px;
+    background-color: variables.$spike;
+  }*/
 }
 nav #cerrar-menu {
   display: none;
   background-color: transparent;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 24px;
   color: #f2f2f2;
 }
 nav #cerrar-menu i {
@@ -65,6 +71,9 @@ nav a {
   text-align: center;
   color: #f2f2f2;
   cursor: pointer;
+  /*&:nth-child(6) {
+    width: 120px;
+  }*/
 }
 nav a:hover {
   color: black;
@@ -81,9 +90,6 @@ nav a:nth-child(4) {
 }
 nav a:nth-child(5) {
   width: 130px;
-}
-nav a:nth-child(6) {
-  width: 120px;
 }
 @media only screen and (max-width: 768px) {
   nav a:hover {
@@ -110,11 +116,6 @@ nav a:nth-child(5):hover ~ .animation {
   left: 305px;
   background-color: #ffd501;
 }
-nav a:nth-child(6):hover ~ .animation {
-  width: 120px;
-  left: 435px;
-  background-color: #ffd501;
-}
 nav .animation {
   position: absolute;
   height: 100%;
@@ -127,8 +128,9 @@ nav .animation {
   nav {
     opacity: 0;
     visibility: hidden;
+    margin: 0;
     width: 200px;
-    height: 98vh;
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -139,6 +141,7 @@ nav .animation {
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
     transition: opacity 0.5s ease;
+    border-radius: 0;
   }
   nav .animation {
     display: none;
@@ -214,40 +217,38 @@ nav.visible {
   }
 }
 
-.down-arrow {
+.arrow {
   position: absolute;
-  top: calc(100vh - 90px);
-  left: calc(50% - 14px);
-  width: 0;
-  height: 29px;
-  border: 2px solid;
-  border-radius: 2px;
-  animation: jumpInfinite 1.5s infinite;
+  bottom: 0;
+  left: 47.5%;
+  text-align: center;
+  margin: 2% 0;
+}
+.arrow a {
   color: #222222;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .arrow {
+    margin: 5% 0;
+  }
 }
 
-.down-arrow:after {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  left: -8px;
-  width: 16px;
-  height: 15px;
-  border-bottom: 4px solid;
-  border-right: 4px solid;
-  border-radius: 4px;
-  transform: rotateZ(45deg);
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
-@keyframes jumpInfinite {
-  0% {
-    margin-top: 0;
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  50% {
-    margin-top: 20px;
+  40% {
+    transform: translateY(-30px);
   }
-  100% {
-    margin-top: 0;
+  60% {
+    transform: translateY(-15px);
   }
 }
 #historia {
@@ -297,22 +298,27 @@ nav.visible {
 
 #cursos {
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .container__cursos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 30px;
   margin-top: 60px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .container__cursos {
+    display: grid;
     gap: 40px;
   }
 }
 
 .curso-tarjeta-wedo,
-.curso-tarjeta-spike {
+.curso-tarjeta-spike,
+.curso-tarjeta-prime {
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,9 +326,65 @@ nav.visible {
   border-radius: 2%;
   padding: 30px 0;
 }
+.curso-tarjeta-wedo h3,
+.curso-tarjeta-spike h3,
+.curso-tarjeta-prime h3 {
+  padding: 15px;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .curso-tarjeta-wedo h3,
+  .curso-tarjeta-spike h3,
+  .curso-tarjeta-prime h3 {
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+.curso-tarjeta-wedo img,
+.curso-tarjeta-spike img,
+.curso-tarjeta-prime img {
+  width: 150px;
+  height: 150px;
+  margin: 30px 0;
+  border-radius: 20%;
+}
+.curso-tarjeta-wedo button:hover,
+.curso-tarjeta-spike button:hover,
+.curso-tarjeta-prime button:hover {
+  background-color: #55cc55;
+  border-color: #55cc55;
+}
+.curso-tarjeta-wedo #cupos_wedo,
+.curso-tarjeta-wedo #cupos_spike,
+.curso-tarjeta-wedo #cupos_prime,
+.curso-tarjeta-spike #cupos_wedo,
+.curso-tarjeta-spike #cupos_spike,
+.curso-tarjeta-spike #cupos_prime,
+.curso-tarjeta-prime #cupos_wedo,
+.curso-tarjeta-prime #cupos_spike,
+.curso-tarjeta-prime #cupos_prime {
+  border: 3px solid #f2f2f2;
+  margin-bottom: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.curso-tarjeta-wedo #cupos_wedo span,
+.curso-tarjeta-wedo #cupos_spike span,
+.curso-tarjeta-wedo #cupos_prime span,
+.curso-tarjeta-spike #cupos_wedo span,
+.curso-tarjeta-spike #cupos_spike span,
+.curso-tarjeta-spike #cupos_prime span,
+.curso-tarjeta-prime #cupos_wedo span,
+.curso-tarjeta-prime #cupos_spike span,
+.curso-tarjeta-prime #cupos_prime span {
+  font-weight: 900;
+  font-size: 19px;
+}
 @media only screen and (max-width: 1024px) {
   .curso-tarjeta-wedo,
-  .curso-tarjeta-spike {
+  .curso-tarjeta-spike,
+  .curso-tarjeta-prime {
     padding: 20px;
   }
 }
@@ -335,30 +397,33 @@ nav.visible {
   background-color: #ffd501;
 }
 
-.curso-tarjeta-wedo h3,
-.curso-tarjeta-spike h3 {
-  padding: 15px;
-  color: white;
+.curso-tarjeta-prime {
+  background-color: #c6008e;
 }
-@media only screen and (max-width: 1024px) {
-  .curso-tarjeta-wedo h3,
-  .curso-tarjeta-spike h3 {
-    padding: 10px;
-    font-size: 24px;
-  }
+
+.boton-horarios-cupos {
+  border: 3px solid #f2f2f2;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.curso-tarjeta-wedo img,
-.curso-tarjeta-spike img {
-  width: 150px;
-  height: 150px;
-  margin: 30px 0;
-  border-radius: 20%;
+
+.expanded {
+  height: 100%;
 }
-@media only screen and (max-width: 1024px) {
-  .curso-tarjeta-wedo,
-  .curso-tarjeta-spike {
-    padding: 20px;
-  }
+
+.hide-buttons {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 5s ease, max-height 5s ease;
+}
+
+.show-buttons {
+  opacity: 1;
+  max-height: 1000px; /* Establece una altura máxima adecuada */
+  transition: opacity 5s ease, max-height 5s ease;
 }
 
 .equipo p {
@@ -579,6 +644,7 @@ html {
 body {
   background: #f9f9ea;
   font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 
 header {

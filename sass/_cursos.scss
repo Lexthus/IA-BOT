@@ -6,27 +6,69 @@
 
 #cursos {
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .container__cursos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 30px;
   margin-top: 60px;
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 768px) {
+    display: grid;
     gap: 40px;
   }
 }
 
 .curso-tarjeta-wedo,
-.curso-tarjeta-spike {
+.curso-tarjeta-spike,
+.curso-tarjeta-prime {
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   border-radius: 2%;
   padding: 30px 0;
+
+  h3 {
+    padding: 15px;
+    color: white;
+
+    @media only screen and (max-width: 768px) {
+      padding: 10px;
+      font-size: 24px;
+    }
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 30px 0;
+    border-radius: 20%;
+  }
+
+  button:hover {
+    background-color: variables.$green;
+    border-color: variables.$green;
+  }
+
+  #cupos_wedo,
+  #cupos_spike,
+  #cupos_prime {
+    border: 3px solid variables.$white;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    span {
+      font-weight: 900;
+      font-size: 19px;
+    }
+  }
 
   @media only screen and (max-width: 1024px) {
     padding: 20px;
@@ -41,26 +83,33 @@
   background-color: variables.$spike;
 }
 
-.curso-tarjeta-wedo,
-.curso-tarjeta-spike {
-  h3 {
-    padding: 15px;
-    color: white;
-
-    @media only screen and (max-width: 1024px) {
-      padding: 10px;
-      font-size: 24px;
-    }
-  }
-
-  img {
-    width: 150px;
-    height: 150px;
-    margin: 30px 0;
-    border-radius: 20%;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    padding: 20px;
-  }
+.curso-tarjeta-prime {
+  background-color: variables.$prime;
 }
+
+.boton-horarios-cupos {
+  border: 3px solid variables.$white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.expanded {
+  height: 100%;
+}
+
+.hide-buttons {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 5s ease, max-height 5s ease;
+}
+
+.show-buttons {
+  opacity: 1;
+  max-height: 1000px; /* Establece una altura máxima adecuada */
+  transition: opacity 5s ease, max-height 5s ease;
+}
+
+
