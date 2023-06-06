@@ -31,7 +31,11 @@
   align-items: center;
   justify-content: flex-start;
   border-radius: 2%;
-  padding: 30px 0;
+  padding: 30px 20px;
+
+  .requisitos {
+    color: variables.$black;
+  }
 
   h3 {
     padding: 15px;
