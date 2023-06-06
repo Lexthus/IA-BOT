@@ -5,7 +5,7 @@
 @use "mision-valores.scss";
 @use "cursos.scss";
 @use "equipo.scss";
-@use "inscribite.scss";
+@use "ubicacion.scss";
 @use "footer.scss";
 @use "elementos-javascript";
 
@@ -45,7 +45,7 @@ header {
 section {
   padding: 10px 50px;
   text-align: center;
-  background: variables.$white;
+  background: variables.$light-beige;
 
   @media only screen and (max-width: 768px) {
     padding: 20px;
