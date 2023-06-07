@@ -404,6 +404,15 @@ nav.visible {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 768px) {
+  .curso-tarjeta-wedo,
+  .curso-tarjeta-spike,
+  .curso-tarjeta-prime {
+    max-width: 360px;
+    padding: 20px;
+    justify-content: center;
+  }
+}
 
 .curso-tarjeta-wedo {
   background-color: #68c3e2;
@@ -626,6 +635,12 @@ nav.visible {
   border-radius: 5%;
 }
 @media only screen and (max-width: 1024px) {
+  #ubicacion iframe {
+    width: 90%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
   #ubicacion {
     font-size: 1em;
     padding: 10px;
@@ -666,7 +681,7 @@ footer {
 }
 .container-footer__logo img {
   width: auto;
-  height: 10vh;
+  height: 9vh;
   text-align: center;
   align-items: center;
 }
@@ -676,7 +691,7 @@ footer {
   }
 }
 .container-footer__logo p {
-  font-size: 3vh;
+  font-size: 2.5vh;
   display: block;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
