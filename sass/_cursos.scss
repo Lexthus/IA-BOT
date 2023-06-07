@@ -37,15 +37,14 @@
 
   .requisitos {
     color: variables.$black;
-    text-align: start;
   }
 
-  h3 {
+  h1 {
     padding: 15px;
+    font-size: 24px;
 
     @media only screen and (max-width: 768px) {
       padding: 20px;
-      font-size: 24px;
     }
   }
 
@@ -96,7 +95,7 @@
 .curso-tarjeta-wedo {
   background-color: variables.$wedo;
 
-  h3 {
+  h1 {
     color: #373737;
   }
 }
@@ -104,7 +103,7 @@
 .curso-tarjeta-spike {
   background-color: variables.$spike;
 
-  h3 {
+  h1 {
     color: #504646;
   }
 }
@@ -112,12 +111,12 @@
 .curso-tarjeta-prime {
   background-color: variables.$prime;
 
-  h3 {
-    color: #ffffff;
+  h1 {
+    color: variables.$white;
   }
 
   .requisitos {
-    color: #ffffff;
+    color: variables.$white;
   }
 }
 

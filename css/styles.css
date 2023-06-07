@@ -335,19 +335,18 @@ nav.visible {
 .curso-tarjeta-spike .requisitos,
 .curso-tarjeta-prime .requisitos {
   color: #222222;
-  text-align: start;
 }
-.curso-tarjeta-wedo h3,
-.curso-tarjeta-spike h3,
-.curso-tarjeta-prime h3 {
+.curso-tarjeta-wedo h1,
+.curso-tarjeta-spike h1,
+.curso-tarjeta-prime h1 {
   padding: 15px;
+  font-size: 24px;
 }
 @media only screen and (max-width: 768px) {
-  .curso-tarjeta-wedo h3,
-  .curso-tarjeta-spike h3,
-  .curso-tarjeta-prime h3 {
+  .curso-tarjeta-wedo h1,
+  .curso-tarjeta-spike h1,
+  .curso-tarjeta-prime h1 {
     padding: 20px;
-    font-size: 24px;
   }
 }
 .curso-tarjeta-wedo span,
@@ -417,25 +416,25 @@ nav.visible {
 .curso-tarjeta-wedo {
   background-color: #68c3e2;
 }
-.curso-tarjeta-wedo h3 {
+.curso-tarjeta-wedo h1 {
   color: #373737;
 }
 
 .curso-tarjeta-spike {
   background-color: #ffd501;
 }
-.curso-tarjeta-spike h3 {
+.curso-tarjeta-spike h1 {
   color: #504646;
 }
 
 .curso-tarjeta-prime {
   background-color: #c6008e;
 }
-.curso-tarjeta-prime h3 {
-  color: #ffffff;
+.curso-tarjeta-prime h1 {
+  color: #f2f2f2;
 }
 .curso-tarjeta-prime .requisitos {
-  color: #ffffff;
+  color: #f2f2f2;
 }
 
 .boton-horarios-cupos {
