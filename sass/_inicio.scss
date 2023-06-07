@@ -21,6 +21,8 @@
 
 .inicio-descripcion {
   padding: 80px;
+  width: 60%;
+  height: auto;
 
   h1 {
     text-align: center;
@@ -37,13 +39,15 @@
   }
 
   img {
-    width: 400px;
+    width: 450px;
+    height: 200px;
     margin: 10px;
     animation-duration: 2s;
 
     @media only screen and (max-width: 768px) {
       margin: 0;
       max-width: 250px;
+      max-height: 130px;;
     }
   }
 
@@ -54,9 +58,16 @@
 }
 
 .inicio-descripcion-container_imagen {
+  max-width: 243px;
+  height: auto;
   position: absolute;
   right: 0;
   animation-duration: 2s;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
 
   @media only screen and (max-width: 768px) {
     position: relative;

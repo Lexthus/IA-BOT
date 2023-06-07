@@ -176,6 +176,8 @@ nav.visible {
     }*/
 .inicio-descripcion {
   padding: 80px;
+  width: 60%;
+  height: auto;
 }
 .inicio-descripcion h1 {
   text-align: center;
@@ -192,7 +194,8 @@ nav.visible {
   }
 }
 .inicio-descripcion img {
-  width: 400px;
+  width: 450px;
+  height: 200px;
   margin: 10px;
   animation-duration: 2s;
 }
@@ -200,6 +203,7 @@ nav.visible {
   .inicio-descripcion img {
     margin: 0;
     max-width: 250px;
+    max-height: 130px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -210,9 +214,15 @@ nav.visible {
 }
 
 .inicio-descripcion-container_imagen {
+  max-width: 243px;
+  height: auto;
   position: absolute;
   right: 0;
   animation-duration: 2s;
+}
+.inicio-descripcion-container_imagen img {
+  height: auto;
+  width: 100%;
 }
 @media only screen and (max-width: 768px) {
   .inicio-descripcion-container_imagen {
@@ -323,7 +333,7 @@ nav.visible {
 .curso-tarjeta-spike,
 .curso-tarjeta-prime {
   max-width: 420px;
-  min-height: 650px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,19 +345,19 @@ nav.visible {
 .curso-tarjeta-spike .requisitos,
 .curso-tarjeta-prime .requisitos {
   color: #222222;
-  text-align: start;
 }
-.curso-tarjeta-wedo h3,
-.curso-tarjeta-spike h3,
-.curso-tarjeta-prime h3 {
+.curso-tarjeta-wedo h1,
+.curso-tarjeta-spike h1,
+.curso-tarjeta-prime h1 {
   padding: 15px;
+  font-size: 24px;
+  margin: 0;
 }
 @media only screen and (max-width: 768px) {
-  .curso-tarjeta-wedo h3,
-  .curso-tarjeta-spike h3,
-  .curso-tarjeta-prime h3 {
+  .curso-tarjeta-wedo h1,
+  .curso-tarjeta-spike h1,
+  .curso-tarjeta-prime h1 {
     padding: 20px;
-    font-size: 24px;
   }
 }
 .curso-tarjeta-wedo span,
@@ -409,6 +419,7 @@ nav.visible {
   .curso-tarjeta-spike,
   .curso-tarjeta-prime {
     max-width: 360px;
+    min-height: 0;
     padding: 20px;
     justify-content: center;
   }
@@ -471,6 +482,7 @@ nav.visible {
 .equipo-tarjeta_ancha img {
   width: 80%;
   max-width: 320px;
+  height: auto;
   border-radius: 50%;
   border: 6px solid #55cc55;
 }
@@ -630,7 +642,6 @@ nav.visible {
 }
 #ubicacion iframe {
   width: 70%;
-  height: 70%;
   margin: 10px;
   border-radius: 5%;
 }
@@ -648,6 +659,9 @@ nav.visible {
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
+}
+#ubicacion h3 {
+  padding: 10px;
 }
 
 footer {
