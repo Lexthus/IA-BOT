@@ -114,7 +114,7 @@
     top: -15px;
     left: 42%;
     transition: all 200ms ease-in;
-  
+
     @media screen and (max-width: 768px) {
       left: -8%;
       top: 30%;
@@ -143,6 +143,6 @@
   }
 
   h4 {
-    color: variables.$green;
+    color: #356835;
   }
 }

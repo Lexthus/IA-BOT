@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Pereyra Alex" />
     <title>IABOT - Cursos de Robótica en LEGO para Niños</title>
-    <link rel="icon" href="assets/IA-BOT.ico" />
+    <link rel="icon" href="assets/img/IA-BOT.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,7 +41,7 @@
     <header>
       <div class="header-logo">
         <a href="index.html">
-          <img alt="Logo de IABOT" src="assets/IABOT.jpg" />
+          <img alt="Logo de IABOT" src="assets/img/render/IABOT.webp" />
         </a>
       </div>
       <button id="abrir-menu"><i class="fa-solid fa-bars"></i></button>
@@ -62,14 +62,12 @@
         <h1 class="animate__backInLeft">Bienvenidos a</h1>
         <img
           class="animate__backInLeft"
-          src="assets/IABOT Robotica Educativa.png"
+          src="assets/img/render/IABOT-Robotica-Educativa.webp"
           alt="Logo iabot"
         />
       </div>
-      <div
-        class="inicio-descripcion-container_imagen fade-in-scroll animate__shakeY"
-      >
-        <img src="assets/saludo-lego.png" alt="Personaje Lego Saludando" />
+      <div class="inicio-descripcion-container_imagen animate__shakeY">
+        <img src="assets/img/render/saludo-lego.webp" alt="Personaje Lego Saludando" />
       </div>
     </section>
 
@@ -151,7 +149,7 @@
         <div class="equipo-tarjeta fade-in-scroll">
           <img src="assets/img/franco-foto.svg" alt="Foto de Franco" />
           <h2>Franco</h2>
-          <h4>Especialista en publicidad y redes sociales</h4>
+          <span>Especialista en publicidad y redes sociales</span>
           <p>
             Su experiencia en el área asegura que nuestra presencia en línea sea
             relevante y efectiva para nuestros estudiantes y sus familias.
@@ -166,7 +164,7 @@
         <div class="equipo-tarjeta fade-in-scroll">
           <img src="assets/img/adrian-foto.svg" alt="Foto de Adrian" />
           <h2>Adrián</h2>
-          <h4>Coordinador de inscripciones y recursos</h4>
+          <span>Coordinador de inscripciones y recursos</span>
           <p>
             Su habilidad para acomodar grupos y horarios, se asegura de que cada
             estudiante reciba la atención y el aprendizaje que necesita.
@@ -185,7 +183,7 @@
         jóvenes.
       </h2>
       <div class="equipo-tarjeta_ancha fade-in-scroll">
-        <img src="assets/img/alex-foto.png" alt="Foto de Alex" />
+        <img src="assets/img/render/alex-foto.webp" alt="Foto de Alex" />
         <div>
           <p>
             Alex en IABOT cree firmemente en el poder de la robótica como
@@ -215,7 +213,7 @@
             <span>Debate</span>
           </div>
           <div class="status">
-            <h4>1. Explorar</h4>
+            <span>1. Explorar</span>
           </div>
         </li>
         <li class="li complete">
@@ -224,7 +222,7 @@
             <span>Programar</span>
           </div>
           <div class="status">
-            <h4>2. Crear</h4>
+            <span>2. Crear</span>
           </div>
         </li>
         <li class="li complete">
@@ -233,7 +231,7 @@
             <span>Presentar</span>
           </div>
           <div class="status bottom">
-            <h4>3. Compartir</h4>
+            <span>3. Compartir</span>
           </div>
         </li>
       </ul>
@@ -244,9 +242,8 @@
       <div class="container__cursos fade-in-scroll" id="container__wedo">
         <div class="curso-tarjeta-wedo" id="curso-wedo">
           <h3>Introducción a la robótica con LEGO WeDo 2.0</h3>
-          <span class="requisitos">Edades: 6 a 12 años</span>
-          <span class="requisitos">Requisitos: Ninguno</span>
-          <img src="assets/img/wedo.png" alt="LEGO WeDo 2.0" />
+          <span class="requisitos">Requisitos: Tener entre 6 y 12 años de edad.</span>
+          <img src="assets/img/render/wedo.webp" alt="LEGO WeDo 2.0" />
           <button id="cupos_wedo">
             <span> Cupos Disponibles </span>
           </button>
@@ -304,7 +301,7 @@
             >Requisitos: 1er año secundario o Introducción a robótica con LEGO
             WeDo 2.0</span
           >
-          <img src="assets/img/spike.png" alt="LEGO Spike Essential" />
+          <img src="assets/img/render/essential.webp" alt="LEGO Spike Essential" />
           <button id="cupos_spike">
             <span> Cupos Disponibles </span>
           </button>
@@ -361,7 +358,7 @@
           <span class="requisitos"
             >Requisitos: Robótica avanzada con LEGO Spike Essential</span
           >
-          <img src="assets/img/prime.png" alt="LEGO Spike Prime" />
+          <img src="assets/img/render/prime.webp" alt="LEGO Spike Prime" />
           <button id="cupos_prime">
             <span> Cupos Disponibles </span>
           </button>
@@ -418,6 +415,7 @@
 
     <section id="ubicacion">
       <iframe
+        id="mapa"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.9870823518236!2d-59.43195112553276!3d-34.655029160207675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc730b045eab23%3A0xda1891be9a9ab566!2sC.%2021%20336%2C%20Mercedes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1686084542189!5m2!1ses-419!2sar"
         width="400"
         height="300"
@@ -434,7 +432,7 @@
 
     <footer>
       <div class="container-footer__logo fade-in-scroll">
-        <img src="assets/IABOT.jpg" alt="Logo IA-BOT" />
+        <img src="assets/img/render/IABOT.webp" alt="Logo IA-BOT" />
         <p>© 2022 - 2023</p>
       </div>
 
@@ -460,7 +458,7 @@
             <p>roboticabot@gmail.com</p>
           </a>
         </div>
-        
+
         <div class="container__instagram">
           <a
             href="https://www.instagram.com/iabot.robotica/"
@@ -473,12 +471,16 @@
         </div>
 
         <div class="container__mapa">
-          <a href="https://goo.gl/maps/Gw4hW6r7RVkZkh7W6" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-location-dot"></i>            
+          <a
+            href="https://goo.gl/maps/Gw4hW6r7RVkZkh7W6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-location-dot"></i>
             <p>C. 21 336, Mercedes, (Bs As)</p>
           </a>
         </div>
-        
+      </div>
     </footer>
 
     <script src="main.js"></script>

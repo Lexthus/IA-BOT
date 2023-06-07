@@ -36,7 +36,6 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   border-radius: 8px;
-  font-size: 0;
   z-index: 100;
   /*a:nth-child(6):hover ~ .animation {
     width: 120px;
@@ -61,15 +60,15 @@ nav #cerrar-menu i {
   }
 }
 nav a {
-  line-height: 50px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   display: inline-block;
   position: relative;
   z-index: 1;
   text-transform: uppercase;
   text-align: center;
-  color: #f2f2f2;
+  font-weight: bold;
+  color: #433535;
   cursor: pointer;
   /*&:nth-child(6) {
     width: 120px;
@@ -308,9 +307,10 @@ nav.visible {
   gap: 30px;
   margin-top: 60px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .container__cursos {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 40px;
   }
 }
@@ -318,11 +318,12 @@ nav.visible {
 .curso-tarjeta-wedo,
 .curso-tarjeta-spike,
 .curso-tarjeta-prime {
-  max-width: 350px;
+  max-width: 420px;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   border-radius: 2%;
   padding: 30px 20px;
 }
@@ -330,26 +331,31 @@ nav.visible {
 .curso-tarjeta-spike .requisitos,
 .curso-tarjeta-prime .requisitos {
   color: #222222;
+  text-align: start;
 }
 .curso-tarjeta-wedo h3,
 .curso-tarjeta-spike h3,
 .curso-tarjeta-prime h3 {
   padding: 15px;
-  color: white;
 }
 @media only screen and (max-width: 768px) {
   .curso-tarjeta-wedo h3,
   .curso-tarjeta-spike h3,
   .curso-tarjeta-prime h3 {
-    padding: 10px;
+    padding: 20px;
     font-size: 24px;
   }
+}
+.curso-tarjeta-wedo span,
+.curso-tarjeta-spike span,
+.curso-tarjeta-prime span {
+  padding: 10px;
 }
 .curso-tarjeta-wedo img,
 .curso-tarjeta-spike img,
 .curso-tarjeta-prime img {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   margin: 30px 0;
   border-radius: 20%;
 }
@@ -391,7 +397,6 @@ nav.visible {
   .curso-tarjeta-spike,
   .curso-tarjeta-prime {
     padding: 20px;
-    height: 580px;
     justify-content: center;
   }
 }
@@ -399,13 +404,25 @@ nav.visible {
 .curso-tarjeta-wedo {
   background-color: #68c3e2;
 }
+.curso-tarjeta-wedo h3 {
+  color: #373737;
+}
 
 .curso-tarjeta-spike {
   background-color: #ffd501;
 }
+.curso-tarjeta-spike h3 {
+  color: #504646;
+}
 
 .curso-tarjeta-prime {
   background-color: #c6008e;
+}
+.curso-tarjeta-prime h3 {
+  color: #ffffff;
+}
+.curso-tarjeta-prime .requisitos {
+  color: #ffffff;
 }
 
 .boton-horarios-cupos {
@@ -579,7 +596,7 @@ nav.visible {
   transition: all 200ms ease-in;
 }
 .li.complete .status h4 {
-  color: #55cc55;
+  color: #356835;
 }
 
 #ubicacion {
@@ -621,7 +638,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #55cc55;
+  background: linear-gradient(#f9f9ea, #55cc55 1%);
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
@@ -659,7 +676,7 @@ footer {
   display: block;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
-  color: #f2f2f2;
+  color: #433535;
 }
 
 #contacto {
@@ -707,7 +724,7 @@ footer {
 .container__instagram p,
 .container__mapa p,
 .container__email p {
-  color: #f2f2f2;
+  color: #433535;
   padding-left: 10px;
 }
 @media only screen and (max-width: 768px) {
@@ -724,7 +741,7 @@ footer {
 .container__email i {
   display: flex;
   align-items: center;
-  color: #f2f2f2;
+  color: #433535;
 }
 
 .fade-in-scroll {
@@ -758,7 +775,7 @@ header {
   width: 100%;
   height: 60px;
   box-sizing: border-box;
-  background: #55cc55;
+  background: linear-gradient(#55cc55 99%, #f9f9ea);
   display: flex;
   justify-content: space-between;
   align-items: center;
