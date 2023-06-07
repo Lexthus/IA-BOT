@@ -1,38 +1,39 @@
-# IA-BOT - Curso de Robótica en LEGO para Niños
+# IABOT - Cursos de Robótica en LEGO para Niños
 
-Este repositorio contiene el código fuente de la página web de IA-BOT, una escuela de robótica que ofrece cursos en LEGO para niños. El objetivo de esta página es promover los talleres y cursos que brinda IA-BOT, fomentando la creatividad y las habilidades de programación y resolución de problemas en los estudiantes.
+Este es el código fuente de la página web de IABOT, una escuela de robótica en LEGO para niños. En este proyecto se utilizan HTML, CSS y JavaScript para crear una página web interactiva y atractiva.
 
-## Características
+## Cómo utilizar el código
 
-- La página está desarrollada en HTML y CSS.
-- Utiliza la biblioteca Font Awesome para agregar iconos.
-- Incluye la biblioteca ScrollReveal para efectos de desplazamiento y animación.
-- Se utilizan meta etiquetas para mejorar la accesibilidad y el SEO de la página.
-- El diseño es responsivo y se adapta a diferentes dispositivos y tamaños de pantalla.
+1. Clona este repositorio en tu máquina local.
+2. Abre el archivo `index.html` en tu navegador web para ver la página principal.
 
-## Estructura del Repositorio
+## Estructura de archivos
 
-El repositorio está organizado de la siguiente manera:
+El proyecto se organiza de la siguiente manera:
 
-- `index.html`: Es el archivo principal que contiene el código HTML de la página.
-- `css/`: Carpeta que contiene los archivos CSS utilizados para dar estilo a la página.
-- `assets/`: Carpeta que contiene los recursos utilizados, como imágenes y el logotipo de IA-BOT.
-- `main.js`: Archivo JavaScript que contiene scripts utilizados en la página.
+- `index.html`: Archivo principal que contiene la estructura HTML de la página.
+- `css/`: Carpeta que contiene los estilos CSS.
+  - `normalize.css`: Archivo CSS que normaliza los estilos en diferentes navegadores.
+  - `styles.css`: Archivo CSS personalizado con estilos específicos para la página.
+- `js/`: Carpeta que contiene los archivos JavaScript.
+  - `script.js`: Archivo JavaScript que controla el comportamiento interactivo de la página.
+- `assets/`: Carpeta que contiene los recursos utilizados en la página.
+  - `img/`: Carpeta que contiene las imágenes utilizadas en la página.
+  - `fonts/`: Carpeta que contiene las fuentes de Google Fonts utilizadas en la página.
 
-## Uso
+## Contribución
 
-Para visualizar la página web, simplemente abre el archivo `index.html` en tu navegador web preferido. Asegúrate de tener una conexión a Internet activa para cargar las fuentes y otros recursos externos.
+Si deseas contribuir a este proyecto, puedes hacerlo de la siguiente manera:
 
-## Contribuciones
-
-Las contribuciones a este proyecto son bienvenidas. Si encuentras algún error, tienes sugerencias de mejora o quieres agregar nuevas características, puedes abrir un "issue" o enviar un "pull request" en este repositorio.
+1. Haz un fork de este repositorio.
+2. Crea una rama con la nueva funcionalidad: `git checkout -b nueva-funcionalidad`.
+3. Realiza tus cambios y commitea tus modificaciones: `git commit -m "Agrega nueva funcionalidad"`.
+4. Envía tus cambios a tu repositorio remoto: `git push origin nueva-funcionalidad`.
+5. Abre un pull request en este repositorio.
 
 ## Contacto
 
-Si deseas obtener más información sobre los cursos y talleres de IA-BOT, puedes comunicarte con nosotros a través de los siguientes medios:
+Si tienes alguna pregunta o sugerencia sobre este proyecto, puedes contactar a Pereyra Alex, el autor de este proyecto.
 
-- Teléfono: +54 2324518276
-- Instagram: [iabot.robotica](https://www.instagram.com/iabot.robotica/)
-- Email: [roboticabot@gmail.com](mailto:roboticabot@gmail.com)
+¡Esperamos que disfrutes explorando nuestra página web de IABOT!
 
-¡Gracias por visitar nuestro repositorio y esperamos que disfrutes de la experiencia en IA-BOT!
