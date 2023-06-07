@@ -91,6 +91,10 @@ nav a:nth-child(5) {
   width: 130px;
 }
 @media only screen and (max-width: 768px) {
+  nav a {
+    line-height: 50px;
+    color: #f2f2f2;
+  }
   nav a:hover {
     color: #ffd501;
   }
@@ -719,6 +723,14 @@ footer {
   display: flex;
   justify-content: center;
   padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .container__whatsapp a,
+  .container__instagram a,
+  .container__mapa a,
+  .container__email a {
+    padding: 0;
+  }
 }
 .container__whatsapp p,
 .container__instagram p,
