@@ -334,7 +334,7 @@ nav.visible {
 
 #cursos {
   flex-direction: column;
-  padding-bottom: 50px;
+  padding: 10px 50px;
 }
 
 .container__cursos {
@@ -555,7 +555,8 @@ nav.visible {
 }
 
 .timeline {
-  margin: 50px;
+  margin-top: 70px;
+  margin-bottom: 35px;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -648,7 +649,8 @@ nav.visible {
 }
 
 #ubicacion {
-  padding-bottom: 60px;
+  margin: 50px 10px;
+  padding: 50px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
