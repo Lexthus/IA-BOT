@@ -328,6 +328,64 @@ nav.visible {
   margin-top: 25px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container p {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .container p {
+    min-height: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.slider {
+  margin-left: 50px;
+  width: 60%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+  display: none;
+  position: absolute;
+  left: 100%;
+  object-fit: cover;
+  animation: slide-in 2s forwards;
+}
+
+.slide.active {
+  display: block;
+}
+
+@keyframes slide-in {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
 .inscribite {
   text-align: center;
 }
@@ -382,11 +440,6 @@ nav.visible {
   .curso-tarjeta-prime h1 {
     padding: 20px;
   }
-}
-.curso-tarjeta-wedo span,
-.curso-tarjeta-spike span,
-.curso-tarjeta-prime span {
-  padding: 10px;
 }
 .curso-tarjeta-wedo img,
 .curso-tarjeta-spike img,
@@ -498,12 +551,13 @@ nav.visible {
 }
 
 .equipo p {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 .equipo-tarjeta img,
 .equipo-tarjeta_ancha img {
-  width: 80%;
+  width: 50%;
+  min-width: 250px;
   max-width: 320px;
   height: auto;
   border-radius: 50%;
@@ -512,14 +566,9 @@ nav.visible {
 @media only screen and (max-width: 600px) {
   .equipo-tarjeta img,
   .equipo-tarjeta_ancha img {
-    width: 80%;
     max-width: 200px;
     margin-top: 15px;
   }
-}
-.equipo-tarjeta img h2,
-.equipo-tarjeta_ancha img h2 {
-  margin: 20px 20px 0 20px;
 }
 .equipo-tarjeta img h4,
 .equipo-tarjeta_ancha img h4 {

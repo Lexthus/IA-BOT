@@ -77,4 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  //
+
+  var slides = document.getElementsByClassName("slide");
+  var currentSlide = 0;
+  
+  setInterval(function() {
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+    
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }, 4000);
+
 });

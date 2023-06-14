@@ -1,0 +1,58 @@
+@use "variables.scss";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    p {
+      width: 100%;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+  
+      @media screen and (max-width: 768px) {
+        min-height: 0;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  
+  .slider {
+    margin-left: 50px;
+    width: 60%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  .slide {
+    width: 100%;
+    height: auto;
+    display: none;
+    position: absolute;
+    left: 100%;
+    object-fit: cover;
+    animation: slide-in 2s forwards;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
