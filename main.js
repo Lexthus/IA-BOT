@@ -89,6 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].classList.add("active");
-  }, 4000);
+  }, 3000);
 
 });
