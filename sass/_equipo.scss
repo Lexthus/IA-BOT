@@ -1,5 +1,6 @@
 @use "variables.scss";
 
+/* Estilos para la sección de equipo */
 .equipo {
   h1 {
     margin: 0;
@@ -10,8 +11,7 @@
   }
 }
 
-
-
+/* Estilos para las tarjetas de equipo */
 .equipo-tarjeta,
 .equipo-tarjeta_ancha {
   img {
@@ -33,6 +33,7 @@
   }
 }
 
+/* Estilos para el contenedor de las tarjetas */
 .tarjetas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -45,6 +46,7 @@
   }
 }
 
+/* Estilos para las tarjetas de equipo en versión ancha */
 .equipo-tarjeta_ancha {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -52,11 +54,13 @@
   justify-items: center;
   margin: 30px 0;
 
+  .texto-tarjeta-ancha {
+    width: 100%;
+  }
+
   @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     text-align: center;
     margin: 0;
   }
 }
-
-

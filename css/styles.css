@@ -37,11 +37,6 @@ nav {
   align-items: center;
   border-radius: 8px;
   z-index: 100;
-  /*a:nth-child(6):hover ~ .animation {
-    width: 120px;
-    left: 435px;
-    background-color: variables.$spike;
-  }*/
 }
 nav #cerrar-menu {
   display: none;
@@ -70,9 +65,6 @@ nav a {
   font-weight: bold;
   color: #433535;
   cursor: pointer;
-  /*&:nth-child(6) {
-    width: 120px;
-  }*/
 }
 nav a:hover {
   color: black;
@@ -181,47 +173,47 @@ nav.visible {
 }
 
 #inicio {
-  padding: 0;
-  min-height: 100vh;
-  color: #f2f2f2;
-  display: flex;
   align-items: center;
+  color: #f2f2f2; /* Color de texto */
+  display: flex;
+  min-height: 100vh;
+  padding: 0;
 }
 
 /*.fondo-inicio {
-      margin-top: 20px;
-      background: url("/assets/fondo-inicio.png") fixed center center/cover;
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }*/
+  background: url("/assets/fondo-inicio.png") fixed center center/cover;
+  height: 100%;
+  left: 0;
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}*/
 .inicio-descripcion {
-  padding: 80px;
   width: 60%;
   height: auto;
+  padding: 80px;
 }
 .inicio-descripcion h1 {
-  text-align: center;
-  text-transform: uppercase;
-  color: black;
+  animation-duration: 2s;
+  color: black; /* Color de texto */
   font-family: "Montserrat", sans-serif;
   font-size: xx-large;
   margin: 10px;
-  animation-duration: 2s;
+  text-align: center;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
   .inicio-descripcion h1 {
-    font-size: x-large;
+    font-size: x-large; /* Tamaño de fuente en pantallas pequeñas */
   }
 }
 .inicio-descripcion img {
+  animation-duration: 2s;
   width: 450px;
   height: auto;
   margin: 10px;
-  animation-duration: 2s;
 }
 @media only screen and (max-width: 768px) {
   .inicio-descripcion img {
@@ -237,15 +229,15 @@ nav.visible {
 }
 
 .inicio-descripcion-container_imagen {
+  animation-duration: 2s;
   max-width: 243px;
   height: auto;
   position: absolute;
   right: 0;
-  animation-duration: 2s;
 }
 .inicio-descripcion-container_imagen img {
-  height: auto;
   width: 100%;
+  height: auto;
 }
 @media only screen and (max-width: 768px) {
   .inicio-descripcion-container_imagen {
@@ -254,14 +246,14 @@ nav.visible {
 }
 
 .arrow {
-  position: absolute;
   bottom: 0;
   left: 47.5%;
-  text-align: center;
   margin: 2% 0;
+  position: absolute;
+  text-align: center;
 }
 .arrow a {
-  color: #222222;
+  color: #222222; /* Color de texto */
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
@@ -271,8 +263,6 @@ nav.visible {
 }
 
 .bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
 
@@ -309,8 +299,8 @@ nav.visible {
   padding: 10px;
 }
 .mision-valores-tarjeta i {
-  margin: 5px 0;
   font-size: 70px;
+  margin: 5px 0;
 }
 .mision-valores-tarjeta .fa-lightbulb {
   color: #68c3e2;
@@ -366,11 +356,14 @@ nav.visible {
 }
 
 .slide {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   display: none;
   position: absolute;
-  left: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: cover;
   animation: slide-in 2s forwards;
 }
@@ -387,20 +380,23 @@ nav.visible {
     left: 0;
   }
 }
+/* Estilos para la sección "Inscribete" */
 .inscribite {
   text-align: center;
 }
 
+/* Estilos para la sección "Cursos" */
 #cursos {
   flex-direction: column;
   padding: 10px 50px;
 }
 
 .container__cursos {
+  align-items: stretch;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   gap: 30px;
+  height: 100%;
+  justify-content: center;
   margin-top: 60px;
 }
 @media only screen and (max-width: 1024px) {
@@ -411,17 +407,19 @@ nav.visible {
   }
 }
 
+/* Estilos para las tarjetas de cursos */
 .curso-tarjeta-wedo,
 .curso-tarjeta-spike,
 .curso-tarjeta-prime {
-  max-width: 420px;
-  min-height: 700px;
+  align-items: center;
+  border-radius: 2%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border-radius: 2%;
-  padding: 30px 20px;
+  max-width: 420px;
+  padding: 20px;
+  /* Estilos para los requisitos dentro de la tarjeta */
+  /* Estilos para los cupos de cada curso */
 }
 .curso-tarjeta-wedo .requisitos,
 .curso-tarjeta-spike .requisitos,
@@ -431,9 +429,9 @@ nav.visible {
 .curso-tarjeta-wedo h1,
 .curso-tarjeta-spike h1,
 .curso-tarjeta-prime h1 {
-  padding: 15px;
   font-size: 24px;
   margin: 0;
+  padding: 15px 5px;
 }
 @media only screen and (max-width: 768px) {
   .curso-tarjeta-wedo h1,
@@ -445,10 +443,9 @@ nav.visible {
 .curso-tarjeta-wedo img,
 .curso-tarjeta-spike img,
 .curso-tarjeta-prime img {
-  width: 300px;
-  height: 300px;
+  width: 80%;
+  height: auto;
   margin: 30px 0;
-  border-radius: 20%;
 }
 .curso-tarjeta-wedo button:hover,
 .curso-tarjeta-spike button:hover,
@@ -466,10 +463,10 @@ nav.visible {
 .curso-tarjeta-prime #cupos_spike,
 .curso-tarjeta-prime #cupos_prime {
   border: 3px solid #f2f2f2;
-  margin-bottom: 40px;
-  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 .curso-tarjeta-wedo #cupos_wedo span,
 .curso-tarjeta-wedo #cupos_spike span,
@@ -480,28 +477,29 @@ nav.visible {
 .curso-tarjeta-prime #cupos_wedo span,
 .curso-tarjeta-prime #cupos_spike span,
 .curso-tarjeta-prime #cupos_prime span {
-  font-weight: 900;
   font-size: 19px;
+  font-weight: 900;
 }
 @media only screen and (max-width: 1024px) {
   .curso-tarjeta-wedo,
   .curso-tarjeta-spike,
   .curso-tarjeta-prime {
-    padding: 20px;
     justify-content: center;
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
   .curso-tarjeta-wedo,
   .curso-tarjeta-spike,
   .curso-tarjeta-prime {
+    justify-content: center;
     max-width: 360px;
     min-height: 0;
     padding: 20px;
-    justify-content: center;
   }
 }
 
+/* Estilos específicos para la tarjeta del curso "wedo" */
 .curso-tarjeta-wedo {
   background-color: #68c3e2;
 }
@@ -509,6 +507,7 @@ nav.visible {
   color: #373737;
 }
 
+/* Estilos específicos para la tarjeta del curso "spike" */
 .curso-tarjeta-spike {
   background-color: #ffd501;
 }
@@ -516,6 +515,7 @@ nav.visible {
   color: #504646;
 }
 
+/* Estilos específicos para la tarjeta del curso "prime" */
 .curso-tarjeta-prime {
   background-color: #c6008e;
 }
@@ -526,12 +526,17 @@ nav.visible {
   color: #f2f2f2;
 }
 
+/* Estilos para el botón de horarios y cupos */
 .boton-horarios-cupos {
   border: 3px solid #f2f2f2;
-  margin-bottom: 10px;
-  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 10px;
+  min-width: 210px;
+  padding: 10px;
+}
+.boton-horarios-cupos a {
+  justify-content: center;
 }
 
 .expanded {
@@ -539,18 +544,19 @@ nav.visible {
 }
 
 .hide-buttons {
-  opacity: 0;
   max-height: 0;
+  opacity: 0;
   overflow: hidden;
   transition: opacity 5s ease, max-height 5s ease;
 }
 
 .show-buttons {
+  max-height: 1000px;
   opacity: 1;
-  max-height: 1000px; /* Establece una altura máxima adecuada */
   transition: opacity 5s ease, max-height 5s ease;
 }
 
+/* Estilos para la sección de equipo */
 .equipo h1 {
   margin: 0;
 }
@@ -558,6 +564,7 @@ nav.visible {
   margin: 30px 0;
 }
 
+/* Estilos para las tarjetas de equipo */
 .equipo-tarjeta img,
 .equipo-tarjeta_ancha img {
   width: 50%;
@@ -579,6 +586,7 @@ nav.visible {
   margin-top: 10px;
 }
 
+/* Estilos para el contenedor de las tarjetas */
 .tarjetas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -592,6 +600,7 @@ nav.visible {
   }
 }
 
+/* Estilos para las tarjetas de equipo en versión ancha */
 .equipo-tarjeta_ancha {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -599,12 +608,21 @@ nav.visible {
   justify-items: center;
   margin: 30px 0;
 }
+.equipo-tarjeta_ancha .texto-tarjeta-ancha {
+  width: 100%;
+}
 @media only screen and (max-width: 768px) {
   .equipo-tarjeta_ancha {
     grid-template-columns: 1fr;
     text-align: center;
     margin: 0;
   }
+}
+
+#recursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .timeline {
@@ -743,23 +761,7 @@ nav.visible {
   }
 }
 
-footer {
-  width: 100%;
-  padding: 15px;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: linear-gradient(#f9f9ea, #55cc55 1%);
-  text-align: center;
-}
-@media only screen and (max-width: 768px) {
-  footer {
-    grid-template-columns: 1fr;
-    flex-wrap: wrap;
-  }
-}
-
+/* Estilos para el contenedor del logo en el footer */
 .container-footer__logo {
   padding: 15px;
   display: flex;
@@ -791,6 +793,7 @@ footer {
   color: #433535;
 }
 
+/* Estilos para el contenedor de contacto en el footer */
 #contacto {
   width: 65%;
   display: grid;
@@ -807,6 +810,7 @@ footer {
   }
 }
 
+/* Estilos para los contenedores individuales de WhatsApp, Instagram, Mapa y Email en el footer */
 .container__whatsapp,
 .container__instagram,
 .container__mapa,
@@ -864,60 +868,69 @@ footer {
   color: #433535;
 }
 
+/* Estilos para la animación de desvanecimiento al hacer scroll */
 .fade-in-scroll {
   opacity: 0;
   transition: opacity 0.6s linear;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Importaciones de archivos SCSS */
+/* Configuración para desplazamiento suave en HTML */
 html {
   scroll-behavior: smooth;
 }
 
+/* Estilos de secciones y artículos */
+article,
+section {
+  background: #f9f9ea;
+  padding: 10px 50px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  article,
+  section {
+    padding: 10px 20px;
+  }
+}
+
+/* Estilos del cuerpo (body) */
 body {
   background: #f9f9ea;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
 
+/* Estilos del encabezado (header) */
 header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  box-sizing: border-box;
-  background: linear-gradient(#55cc55 99%, #f9f9ea);
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  background: linear-gradient(#55cc55 99%, #f9f9ea);
+  box-sizing: border-box;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
   z-index: 15;
 }
 
-section {
-  padding: 10px 50px;
-  text-align: center;
-  background: #f9f9ea;
-}
-@media only screen and (max-width: 768px) {
-  section {
-    padding: 10px 20px;
-  }
+/* Estilos para enlaces */
+a {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
 }
 
+/* Estilos para formularios */
 form {
   display: flex;
   flex-direction: column;
 }
 
+/* Estilos para títulos */
 h1 {
   font-size: 48px;
   margin-bottom: 30px;
@@ -949,11 +962,27 @@ h3 {
   }
 }
 
+/* Estilos generales */
+/* Resetear márgenes y paddings en todos los elementos */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el menú de navegación */
+#toggler .navbar-menu label {
+  display: none;
+}
+
+/* Estilos para párrafos */
 p {
-  margin: 10px 0;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
+  margin: 10px 0;
 }
 @media only screen and (max-width: 768px) {
   p {
@@ -962,19 +991,32 @@ p {
   }
 }
 
-a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+/* Estilos para desplazamiento suave en HTML */
+html {
+  scroll-behavior: smooth;
 }
 
-:target {
-  scroll-margin-top: 60px;
-}
-
-/* Toggler */
-#toggler .navbar-menu label {
+/* Estilos para la barra de navegación */
+.navbar-menu label {
   display: none;
+}
+
+/* Estilos para el pie de página */
+footer {
+  width: 100%;
+  padding: 15px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(#f9f9ea, #55cc55 1%);
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

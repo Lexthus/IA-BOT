@@ -1,5 +1,6 @@
 @use "variables.scss";
 
+// Estilos para la sección de ubicación
 #ubicacion {
   margin: 50px 10px;
   padding: 50px;
@@ -8,9 +9,10 @@
   justify-content: space-around;
   align-items: center;
 
+  // Estilos para el título de la ubicación
   .ubicacion-titulo {
     width: 40%;
-    
+
     h1 {
       padding: 10px;
       font-size: 24px;
@@ -22,6 +24,7 @@
     }
   }
 
+  // Estilos para el iframe del mapa
   iframe {
     width: 70%;
     margin: 10px;

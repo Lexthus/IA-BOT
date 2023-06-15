@@ -1,36 +1,43 @@
 @use "variables.scss";
 
+// Estilos para la sección de Misión y Valores
 .mision-valores {
   display: flex;
   flex-direction: column;
 }
 
+// Estilos para el contenedor de tarjetas en la sección de Misión y Valores
 .mision-valores-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
+// Estilos para las tarjetas en la sección de Misión y Valores
 .mision-valores-tarjeta {
   padding: 10px;
 
   i {
-    margin: 5px 0;
     font-size: 70px;
+    margin: 5px 0;
   }
 
+  // Estilos para el icono de bombilla en la tarjeta de Misión
   .fa-lightbulb {
     color: variables.$wedo;
   }
 
+  // Estilos para el icono de corazón en la tarjeta de Valores
   .fa-heart {
     color: variables.$red;
   }
 
+  // Estilos para el icono de estrella en la tarjeta de Valores
   .fa-star {
     color: variables.$violet;
   }
 
+  // Estilos para el icono de sonrisa en la tarjeta de Valores
   .fa-smile-beam {
     color: variables.$spike;
   }

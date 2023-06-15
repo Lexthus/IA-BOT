@@ -1,19 +1,22 @@
 @use "variables.scss";
 
+/* Estilos para la sección "Inscribete" */
 .inscribite {
   text-align: center;
 }
 
+/* Estilos para la sección "Cursos" */
 #cursos {
   flex-direction: column;
   padding: 10px 50px;
 }
 
 .container__cursos {
+  align-items: stretch;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   gap: 30px;
+  height: 100%;
+  justify-content: center;
   margin-top: 60px;
 
   @media only screen and (max-width: 1024px) {
@@ -23,26 +26,27 @@
   }
 }
 
+/* Estilos para las tarjetas de cursos */
 .curso-tarjeta-wedo,
 .curso-tarjeta-spike,
 .curso-tarjeta-prime {
-  max-width: 420px;
-  min-height: 700px;
+  align-items: center;
+  border-radius: 2%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border-radius: 2%;
-  padding: 30px 20px;
+  max-width: 420px;
+  padding: 20px;
 
+  /* Estilos para los requisitos dentro de la tarjeta */
   .requisitos {
     color: variables.$black;
   }
 
   h1 {
-    padding: 15px;
     font-size: 24px;
     margin: 0;
+    padding: 15px 5px;
 
     @media only screen and (max-width: 768px) {
       padding: 20px;
@@ -50,10 +54,9 @@
   }
 
   img {
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    height: auto;
     margin: 30px 0;
-    border-radius: 20%;
   }
 
   button:hover {
@@ -61,34 +64,36 @@
     border-color: variables.$green;
   }
 
+  /* Estilos para los cupos de cada curso */
   #cupos_wedo,
   #cupos_spike,
   #cupos_prime {
     border: 3px solid variables.$white;
-    margin-bottom: 40px;
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px;
 
     span {
-      font-weight: 900;
       font-size: 19px;
+      font-weight: 900;
     }
   }
 
   @media only screen and (max-width: 1024px) {
-    padding: 20px;
     justify-content: center;
+    padding: 20px;
   }
 
   @media only screen and (max-width: 768px) {
+    justify-content: center;
     max-width: 360px;
     min-height: 0;
     padding: 20px;
-    justify-content: center;
   }
 }
 
+/* Estilos específicos para la tarjeta del curso "wedo" */
 .curso-tarjeta-wedo {
   background-color: variables.$wedo;
 
@@ -97,6 +102,7 @@
   }
 }
 
+/* Estilos específicos para la tarjeta del curso "spike" */
 .curso-tarjeta-spike {
   background-color: variables.$spike;
 
@@ -105,6 +111,7 @@
   }
 }
 
+/* Estilos específicos para la tarjeta del curso "prime" */
 .curso-tarjeta-prime {
   background-color: variables.$prime;
 
@@ -117,12 +124,18 @@
   }
 }
 
+/* Estilos para el botón de horarios y cupos */
 .boton-horarios-cupos {
   border: 3px solid variables.$white;
-  margin-bottom: 10px;
-  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 10px;
+  min-width: 210px;
+  padding: 10px;
+
+  a {
+    justify-content: center;
+  }
 }
 
 .expanded {
@@ -130,14 +143,14 @@
 }
 
 .hide-buttons {
-  opacity: 0;
   max-height: 0;
+  opacity: 0;
   overflow: hidden;
   transition: opacity 5s ease, max-height 5s ease;
 }
 
 .show-buttons {
+  max-height: 1000px;
   opacity: 1;
-  max-height: 1000px; /* Establece una altura máxima adecuada */
   transition: opacity 5s ease, max-height 5s ease;
 }

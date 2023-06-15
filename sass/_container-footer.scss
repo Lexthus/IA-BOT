@@ -1,21 +1,6 @@
 @use "variables.scss";
 
-footer {
-  width: 100%;
-  padding: 15px;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: linear-gradient(variables.$light-beige, variables.$green 1%);
-  text-align: center;
-
-  @media only screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    flex-wrap: wrap;
-  }
-}
-
+/* Estilos para el contenedor del logo en el footer */
 .container-footer__logo {
   padding: 15px;
   display: flex;
@@ -47,6 +32,7 @@ footer {
   }
 }
 
+/* Estilos para el contenedor de contacto en el footer */
 #contacto {
   width: 65%;
   display: grid;
@@ -62,6 +48,7 @@ footer {
   }
 }
 
+/* Estilos para los contenedores individuales de WhatsApp, Instagram, Mapa y Email en el footer */
 .container__whatsapp,
 .container__instagram,
 .container__mapa,

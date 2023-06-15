@@ -1,3 +1,4 @@
+/* Importaciones de archivos SCSS */
 @use "variables.scss";
 @use "nav-bar";
 @use "inicio.scss";
@@ -8,58 +9,63 @@
 @use "equipo.scss";
 @use "recursos.scss";
 @use "ubicacion.scss";
-@use "footer.scss";
+@use "container-footer.scss";
 @use "elementos-javascript";
 
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Configuración para desplazamiento suave en HTML */
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: variables.$light-beige;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  box-sizing: border-box;
-  background: linear-gradient(variables.$green 99%, variables.$light-beige );;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 15;
-}
-
+/* Estilos de secciones y artículos */
+article,
 section {
+  background: variables.$light-beige;
   padding: 10px 50px;
   text-align: center;
-  background: variables.$light-beige;
 
   @media only screen and (max-width: 768px) {
     padding: 10px 20px;
   }
 }
 
+/* Estilos del cuerpo (body) */
+body {
+  background: variables.$light-beige;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+/* Estilos del encabezado (header) */
+header {
+  align-items: center;
+  background: linear-gradient(variables.$green 99%, variables.$light-beige);
+  box-sizing: border-box;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+/* Estilos para enlaces */
+a {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+/* Estilos para formularios */
 form {
   display: flex;
   flex-direction: column;
 }
 
+/* Estilos para títulos */
 h1 {
   font-size: 48px;
   margin-bottom: 30px;
@@ -88,11 +94,28 @@ h3 {
   }
 }
 
+/* Estilos generales */
+
+/* Resetear márgenes y paddings en todos los elementos */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el menú de navegación */
+#toggler .navbar-menu label {
+  display: none;
+}
+
+/* Estilos para párrafos */
 p {
-  margin: 10px 0;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
+  margin: 10px 0;
 
   @media only screen and (max-width: 768px) {
     font-size: 16px;
@@ -100,20 +123,29 @@ p {
   }
 }
 
-a {
+/* Estilos para desplazamiento suave en HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos para la barra de navegación */
+.navbar-menu label {
+  display: none;
+}
+
+/* Estilos para el pie de página */
+footer {
+  width: 100%;
+  padding: 15px;
+  bottom: 0;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  text-decoration: none;
-}
+  background: linear-gradient(#f9f9ea, #55cc55 1%);
+  text-align: center;
 
-:target {
-  scroll-margin-top: 60px;
-}
-
-/* Toggler */
-
-#toggler {
-  .navbar-menu label {
-    display: none;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
   }
 }

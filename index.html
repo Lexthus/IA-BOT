@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Encabezado del documento -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -24,7 +25,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/dd85322e97.js"
@@ -34,14 +39,27 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Etiquetas de metadatos Open Graph -->
+    <meta
+      property="og:title"
+      content="IABOT - Cursos de Robótica en LEGO para Niños"
+    />
+    <meta
+      property="og:description"
+      content="Cursos de robótica en LEGO para niños. Aprende programación y resolución de problemas con IABOT."
+    />
+    <meta property="og:url" content="URL_DE_LA_PAGINA" />
+    <meta property="og:image" content="URL_DE_LA_IMAGEN" />
   </head>
-
   <body>
     <header>
+      <!-- Encabezado del sitio web -->
       <div class="header-logo">
         <a href="index.html">
-          <img alt="Logo de IABOT" src="assets/img/render/IABOT.webp" />
+          <img
+            alt="Logo de IABOT - Robótica Educativa"
+            src="assets/img/render/IABOT.webp"
+          />
         </a>
       </div>
       <button aria-label="abrir-menu" id="abrir-menu">
@@ -58,29 +76,27 @@
       </nav>
     </header>
 
-    <section id="inicio">
+    <main id="inicio">
+      <!-- Sección de inicio -->
       <!--<div class="fondo-inicio"></div>-->
       <div class="inicio-descripcion">
         <h1 class="animate__backInLeft">Bienvenidos a</h1>
         <img
           class="animate__backInLeft"
           src="assets/img/render/IABOT-Robotica-Educativa.webp"
-          alt="Logo iabot"
+          alt="Logo IABOT - Robótica Educativa"
         />
       </div>
       <div class="inicio-descripcion-container_imagen animate__shakeY">
         <img
-          --aspect-ratio-w:
-          4;
-          --aspect-ratio-h:
-          3
           src="assets/img/render/saludo-lego.webp"
           alt="Personaje Lego Saludando"
         />
       </div>
-    </section>
+    </main>
 
-    <section id="historia" class="seccion-historia">
+    <article id="historia" class="seccion-historia">
+      <!-- Sección de historia -->
       <h1 class="fade-in-scroll">Inspirando el Futuro Tecnológico</h1>
       <div class="fade-in-scroll">
         <p>
@@ -100,9 +116,10 @@
           a más estudiantes hacia un futuro tecnológico brillante.
         </p>
       </div>
-    </section>
+    </article>
 
     <section class="mision-valores">
+       <!-- Sección de misión y valores -->
       <div class="fade-in-scroll"><h1>Nuestra Misión y Valores</h1></div>
       <div class="mision-valores-container fade-in-scroll">
         <div class="mision-valores-tarjeta">
@@ -145,6 +162,7 @@
     </section>
 
     <section class="servicios">
+      <!-- Sección de servicios -->
       <div class="fade-in-scroll">
         <h1>Explora la Robótica Educativa con LEGO</h1>
       </div>
@@ -160,13 +178,18 @@
         </p>
         <div class="slider">
           <img class="slide" src="assets/img/kit-prime.png" alt="Imagen 1" />
-          <img class="slide" src="assets/img/kit-essential.jpg" alt="Imagen 2" />
+          <img
+            class="slide"
+            src="assets/img/kit-essential.jpg"
+            alt="Imagen 2"
+          />
           <img class="slide" src="assets/img/milo.png" alt="Imagen 3" />
         </div>
       </div>
     </section>
 
     <section class="equipo">
+      <!-- Sección de equipo -->
       <h1 class="fade-in-scroll">Conoce a nuestro equipo</h1>
       <p class="fade-in-scroll">
         En IABOT, contamos con un equipo altamente capacitado y comprometido con
@@ -177,7 +200,10 @@
       </p>
       <div class="tarjetas fade-in-scroll">
         <div class="equipo-tarjeta fade-in-scroll">
-          <img src="assets/img/franco-foto.svg" alt="Foto de Franco" />
+          <img
+            src="assets/img/franco-foto.svg"
+            alt="Foto de Franco, instructor de IABOT"
+          />
           <h2>Franco - (Coordinador Docente)</h2>
           <span
             >Analista de Sistemas con orientación en Robótica y Programación
@@ -191,7 +217,10 @@
           </p>
         </div>
         <div class="equipo-tarjeta fade-in-scroll">
-          <img src="assets/img/adrian-foto.svg" alt="Foto de Adrian" />
+          <img
+            src="assets/img/adrian-foto.svg"
+            alt="Foto de Adrián, instructor de IABOT"
+          />
           <h2>Adrián - (Coordinador Docente)</h2>
           <span
             >Profesor de Matemática y Tecnología. (Diplo. en Robótica Educativa)
@@ -210,8 +239,11 @@
         jóvenes.
       </h2>
       <div class="equipo-tarjeta_ancha fade-in-scroll">
-        <img src="assets/img/render/alex-foto.webp" alt="Foto de Alex" />
-        <div>
+        <img
+          src="assets/img/render/alex-foto.webp"
+          alt="Foto de Alex, instructor de IABOT"
+        />
+        <div class="texto-tarjeta-ancha">
           <p>
             Alex en IABOT cree firmemente en el poder de la robótica como
             herramienta para el aprendizaje y el desarrollo de habilidades
@@ -232,6 +264,7 @@
     </section>
 
     <section id="recursos">
+      <!-- Sección de recursos -->
       <h1>Recursos Pedagógicos</h1>
       <ul class="timeline fade-in-scroll">
         <li class="li complete">
@@ -265,6 +298,7 @@
     </section>
 
     <section id="cursos">
+      <!-- Sección de cursos -->
       <h1 class="fade-in-scroll">Nuestros cursos destacados</h1>
       <div class="container__cursos fade-in-scroll" id="container__wedo">
         <div class="curso-tarjeta-wedo" id="curso-wedo">
@@ -274,7 +308,7 @@
           >
           <img src="assets/img/render/wedo.webp" alt="LEGO WeDo 2.0" />
           <button id="cupos_wedo">
-            <span>Cupos Disponibles<br><br>(Click aqui)</span>
+            <span>Cupos Disponibles<br /><br />(Click aqui)</span>
           </button>
           <div id="botones-adicionales-wedo" class="hide-buttons">
             <button class="boton-horarios-cupos" id="boton1-wedo">
@@ -335,7 +369,7 @@
             alt="LEGO Spike Essential"
           />
           <button id="cupos_spike">
-            <span>Cupos Disponibles<br><br>(Click aqui)</span>
+            <span>Cupos Disponibles<br /><br />(Click aqui)</span>
           </button>
           <div id="botones-adicionales-spike" class="hide-buttons">
             <button class="boton-horarios-cupos" id="boton1-spike">
@@ -392,7 +426,7 @@
           >
           <img src="assets/img/render/prime.webp" alt="LEGO Spike Prime" />
           <button id="cupos_prime">
-            <span>Cupos Disponibles<br><br>(Click aqui)</span>
+            <span>Cupos Disponibles<br /><br />(Click aqui)</span>
           </button>
           <div id="botones-adicionales-prime" class="hide-buttons">
             <button class="boton-horarios-cupos" id="boton1">
@@ -515,6 +549,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
     <script
       src="https://kit.fontawesome.com/dd85322e97.js"

@@ -1,59 +1,66 @@
 @use "variables.scss";
 
+// Estilos para el contenedor principal
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-    p {
-      width: 100%;
-      min-height: 300px;
-      display: flex;
-      align-items: center;
-  
-      @media screen and (max-width: 768px) {
-        min-height: 0;
-      }
-    }
-  
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-    }
-  }
-  
-  .slider {
-    margin-left: 50px;
-    width: 60%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-  
-    @media screen and (max-width: 768px) {
-      margin-left: 0;
-      margin-top: 10px;
-      width: 100%;
-    }
-  }
-  
-  .slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  p {
     width: 100%;
-    height: auto;
-    display: none;
-    position: absolute;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      min-height: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+// Estilos para el slider
+.slider {
+  margin-left: 50px;
+  width: 60%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+// Estilos para cada diapositiva del slider
+.slide {
+  width: auto;
+  height: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  animation: slide-in 2s forwards;
+}
+
+.slide.active {
+  display: block;
+}
+
+// Animación de deslizamiento de las diapositivas
+@keyframes slide-in {
+  0% {
     left: 100%;
-    object-fit: cover;
-    animation: slide-in 2s forwards;
   }
-  
-  .slide.active {
-    display: block;
+  100% {
+    left: 0;
   }
-  
-  @keyframes slide-in {
-    0% {
-      left: 100%;
-    }
-    100% {
-      left: 0;
-    }
-  }
+}
