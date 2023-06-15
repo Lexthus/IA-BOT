@@ -886,6 +886,7 @@ section {
   background: #f9f9ea;
   padding: 10px 50px;
   text-align: center;
+  scroll-margin-top: 60px;
 }
 @media only screen and (max-width: 768px) {
   article,
