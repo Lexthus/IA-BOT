@@ -8,6 +8,7 @@
 @use "cursos.scss";
 @use "equipo.scss";
 @use "recursos.scss";
+@use "inscripcion.scss";
 @use "ubicacion.scss";
 @use "container-footer.scss";
 @use "elementos-javascript";
@@ -69,11 +70,9 @@ form {
 /* Estilos para títulos */
 h1 {
   font-size: 48px;
-  margin-bottom: 30px;
 
   @media only screen and (max-width: 768px) {
     font-size: 32px;
-    margin-bottom: 20px;
   }
 }
 

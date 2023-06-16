@@ -28,7 +28,7 @@
 }
 
 nav {
-  width: 435px;
+  width: 558px;
   height: 50px;
   margin: 5px;
   position: relative;
@@ -106,6 +106,15 @@ nav a:nth-child(5) {
     text-align: end;
   }
 }
+nav a:nth-child(6) {
+  width: 120px;
+}
+@media screen and (max-width: 768px) {
+  nav a:nth-child(6) {
+    padding-right: 12%;
+    text-align: end;
+  }
+}
 @media only screen and (max-width: 768px) {
   nav a {
     line-height: 50px;
@@ -133,6 +142,11 @@ nav a:nth-child(4):hover ~ .animation {
 nav a:nth-child(5):hover ~ .animation {
   width: 130px;
   left: 305px;
+  background-color: #ffd501;
+}
+nav a:nth-child(6):hover ~ .animation {
+  width: 120px;
+  left: 435px;
   background-color: #ffd501;
 }
 nav .animation {
@@ -194,10 +208,13 @@ nav.visible {
   width: 60%;
   height: auto;
   padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .inicio-descripcion h1 {
   animation-duration: 2s;
-  color: black; /* Color de texto */
+  color: black;
   font-family: "Montserrat", sans-serif;
   font-size: xx-large;
   margin: 10px;
@@ -206,7 +223,7 @@ nav.visible {
 }
 @media only screen and (max-width: 768px) {
   .inicio-descripcion h1 {
-    font-size: x-large; /* Tamaño de fuente en pantallas pequeñas */
+    font-size: x-large;
   }
 }
 .inicio-descripcion img {
@@ -319,13 +336,13 @@ nav.visible {
 }
 
 .container {
+  height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 .container p {
   width: 100%;
-  min-height: 300px;
   display: flex;
   align-items: center;
 }
@@ -340,46 +357,57 @@ nav.visible {
   }
 }
 
-.slider {
-  margin-left: 50px;
-  width: 60%;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
+.galeria {
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 20px 0;
 }
 @media screen and (max-width: 768px) {
-  .slider {
-    margin-left: 0;
-    margin-top: 10px;
-    width: 100%;
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
-.slide {
-  width: auto;
+.galeria img {
+  width: 100%;
   height: 100%;
-  display: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
   object-fit: cover;
-  animation: slide-in 2s forwards;
 }
-
-.slide.active {
+.galeria .col-md-4 {
+  position: relative;
+}
+.galeria .col-md-4 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+.galeria .col-md-4::before {
+  content: "";
   display: block;
+  padding-top: 100%;
 }
 
-@keyframes slide-in {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: 0;
-  }
+.ampliada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
+.ampliada img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
 /* Estilos para la sección "Inscribete" */
 .inscribite {
   text-align: center;
@@ -397,7 +425,7 @@ nav.visible {
   gap: 30px;
   height: 100%;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 @media only screen and (max-width: 1024px) {
   .container__cursos {
@@ -416,10 +444,9 @@ nav.visible {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 420px;
-  padding: 20px;
+  max-width: 340px;
+  padding: 15px;
   /* Estilos para los requisitos dentro de la tarjeta */
-  /* Estilos para los cupos de cada curso */
 }
 .curso-tarjeta-wedo .requisitos,
 .curso-tarjeta-spike .requisitos,
@@ -437,66 +464,26 @@ nav.visible {
   .curso-tarjeta-wedo h1,
   .curso-tarjeta-spike h1,
   .curso-tarjeta-prime h1 {
-    padding: 20px;
+    padding: 20px 5px;
   }
+}
+.curso-tarjeta-wedo span,
+.curso-tarjeta-spike span,
+.curso-tarjeta-prime span {
+  padding: 0 10px;
 }
 .curso-tarjeta-wedo img,
 .curso-tarjeta-spike img,
 .curso-tarjeta-prime img {
   width: 80%;
   height: auto;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 .curso-tarjeta-wedo button:hover,
 .curso-tarjeta-spike button:hover,
 .curso-tarjeta-prime button:hover {
   background-color: #55cc55;
   border-color: #55cc55;
-}
-.curso-tarjeta-wedo #cupos_wedo,
-.curso-tarjeta-wedo #cupos_spike,
-.curso-tarjeta-wedo #cupos_prime,
-.curso-tarjeta-spike #cupos_wedo,
-.curso-tarjeta-spike #cupos_spike,
-.curso-tarjeta-spike #cupos_prime,
-.curso-tarjeta-prime #cupos_wedo,
-.curso-tarjeta-prime #cupos_spike,
-.curso-tarjeta-prime #cupos_prime {
-  border: 3px solid #f2f2f2;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-.curso-tarjeta-wedo #cupos_wedo span,
-.curso-tarjeta-wedo #cupos_spike span,
-.curso-tarjeta-wedo #cupos_prime span,
-.curso-tarjeta-spike #cupos_wedo span,
-.curso-tarjeta-spike #cupos_spike span,
-.curso-tarjeta-spike #cupos_prime span,
-.curso-tarjeta-prime #cupos_wedo span,
-.curso-tarjeta-prime #cupos_spike span,
-.curso-tarjeta-prime #cupos_prime span {
-  font-size: 19px;
-  font-weight: 900;
-}
-@media only screen and (max-width: 1024px) {
-  .curso-tarjeta-wedo,
-  .curso-tarjeta-spike,
-  .curso-tarjeta-prime {
-    justify-content: center;
-    padding: 20px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .curso-tarjeta-wedo,
-  .curso-tarjeta-spike,
-  .curso-tarjeta-prime {
-    justify-content: center;
-    max-width: 360px;
-    min-height: 0;
-    padding: 20px;
-  }
 }
 
 /* Estilos específicos para la tarjeta del curso "wedo" */
@@ -524,36 +511,6 @@ nav.visible {
 }
 .curso-tarjeta-prime .requisitos {
   color: #f2f2f2;
-}
-
-/* Estilos para el botón de horarios y cupos */
-.boton-horarios-cupos {
-  border: 3px solid #f2f2f2;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  min-width: 210px;
-  padding: 10px;
-}
-.boton-horarios-cupos a {
-  justify-content: center;
-}
-
-.expanded {
-  height: 100%;
-}
-
-.hide-buttons {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: opacity 5s ease, max-height 5s ease;
-}
-
-.show-buttons {
-  max-height: 1000px;
-  opacity: 1;
-  transition: opacity 5s ease, max-height 5s ease;
 }
 
 /* Estilos para la sección de equipo */
@@ -626,8 +583,7 @@ nav.visible {
 }
 
 .timeline {
-  margin-top: 70px;
-  margin-bottom: 35px;
+  margin: 30px 0;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -635,7 +591,6 @@ nav.visible {
 }
 @media screen and (max-width: 768px) {
   .timeline {
-    margin: 50px 10px 0;
     list-style-type: none;
     display: block;
   }
@@ -704,11 +659,11 @@ nav.visible {
 
 @media screen and (max-width: 768px) {
   .bottom {
-    border-bottom: 2px solid #55cc55;
+    border-bottom: 2px solid #ffd501;
   }
 }
 .li.complete .status {
-  border-top: 2px solid #55cc55;
+  border-top: 2px solid #ffd501;
 }
 .li.complete .status:before {
   background-color: #55cc55;
@@ -719,9 +674,67 @@ nav.visible {
   color: #356835;
 }
 
+#inscripcion {
+  margin: 80px 50px 70px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /*.fondo-boton {
+    background-image: url('/assets/img/flechas.png');
+    padding: 120px;
+  }*/
+}
+@media screen and (max-width: 768px) {
+  #inscripcion {
+    flex-direction: column;
+    margin: 30px 30px 0;
+  }
+}
+#inscripcion h1 {
+  width: 50%;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  #inscripcion h1 {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+#inscripcion button {
+  width: fit-content;
+  min-width: 100px;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2.5px solid #e0e1e4;
+  box-shadow: 0px 0px 20px -20px;
+  cursor: pointer;
+  background-color: #55cc55;
+  transition: all 0.2s ease-in-out 0ms;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: larger;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  #inscripcion button {
+    margin-top: 25px;
+  }
+}
+#inscripcion button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 20px -18px;
+}
+#inscripcion button:active {
+  transform: scale(0.95);
+}
+
 #ubicacion {
   margin: 50px 10px;
-  padding: 50px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -731,8 +744,8 @@ nav.visible {
   width: 40%;
 }
 #ubicacion .ubicacion-titulo h1 {
-  padding: 10px;
-  font-size: 24px;
+  padding: 20px;
+  font-size: 30px;
 }
 @media screen and (max-width: 768px) {
   #ubicacion .ubicacion-titulo {
@@ -755,7 +768,7 @@ nav.visible {
   #ubicacion {
     font-size: 1em;
     padding: 10px;
-    margin: 30px;
+    margin: 10px 30px 35px;
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
@@ -934,12 +947,10 @@ form {
 /* Estilos para títulos */
 h1 {
   font-size: 48px;
-  margin-bottom: 30px;
 }
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 32px;
-    margin-bottom: 20px;
   }
 }
 

@@ -8,15 +8,13 @@
 
 // Estilos para la línea de tiempo
 .timeline {
-  margin-top: 70px;
-  margin-bottom: 35px;
+  margin: 30px 0;
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    margin: 50px 10px 0;
     list-style-type: none;
     display: block;
   }
@@ -88,13 +86,13 @@
 @media screen and (max-width: 768px) {
   // Estilos para la línea de tiempo en dispositivos móviles
   .bottom {
-    border-bottom: 2px solid variables.$green;
+    border-bottom: 2px solid variables.$spike;
   }
 }
 
 // Estilos para los elementos completados en la línea de tiempo
 .li.complete .status {
-  border-top: 2px solid variables.$green;
+  border-top: 2px solid variables.$spike;
 
   // Estilos para el marcador antes del estado en elementos completados
   &:before {

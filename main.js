@@ -39,56 +39,28 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.classList.remove("visible")
   })
 
-  // Mostrar u ocultar botones adicionales:
+  // Botón de inscripción:
 
-  var cuposButtonWedo = document.getElementById('cupos_wedo');
-  var botonesContainerWedo = document.getElementById('botones-adicionales-wedo');
-
-  cuposButtonWedo.addEventListener('click', function () {
-    botonesContainerWedo.classList.toggle('hide-buttons');
-    hideOtherButtons('wedo');
-  });
-
-  var cuposButtonSpike = document.getElementById('cupos_spike');
-  var botonesContainerSpike = document.getElementById('botones-adicionales-spike');
-
-  cuposButtonSpike.addEventListener('click', function () {
-    botonesContainerSpike.classList.toggle('hide-buttons');
-    hideOtherButtons('spike');
-  });
-
-  var cuposButtonPrime = document.getElementById('cupos_prime');
-  var botonesContainerPrime = document.getElementById('botones-adicionales-prime');
-
-  cuposButtonPrime.addEventListener('click', function () {
-    botonesContainerPrime.classList.toggle('hide-buttons');
-    hideOtherButtons('prime');
-  });
-
-  // Función para ocultar otros botones:
-
-  function hideOtherButtons(exceptCard) {
-    var cards = ['wedo', 'spike', 'prime'];
-    cards.forEach(function (card) {
-      if (card !== exceptCard) {
-        var botonesContainer = document.getElementById('botones-adicionales-' + card);
-        botonesContainer.classList.add('hide-buttons');
-      }
-    });
-  }
-
-  //
-
-  var slides = document.getElementsByClassName("slide");
-  var currentSlide = 0;
-  
-  setInterval(function() {
-    for (var i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
-    }
-    
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add("active");
-  }, 3000);
-
+  document.getElementById('boton-inscripcion').addEventListener('click', function() {
+  window.open('https://forms.gle/hZEFM1cUyTCGGYyC7', '_blank');
+  })
 });
+
+// Función para ampliar una imagen al hacer clic
+// en ella y mostrarla en pantalla completa
+function ampliarImagen(element) {
+  var ampliada = document.createElement("div");
+  ampliada.classList.add("ampliada");
+
+  var imgAmpliada = document.createElement("img");
+  imgAmpliada.src = element.src;
+  imgAmpliada.alt = element.alt;
+
+  ampliada.appendChild(imgAmpliada);
+  document.body.appendChild(ampliada);
+
+  ampliada.addEventListener("click", function () {
+    ampliada.remove();
+  });
+}
+

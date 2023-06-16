@@ -2,13 +2,13 @@
 
 // Estilos para el contenedor principal
 .container {
+  height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 
   p {
     width: 100%;
-    min-height: 300px;
     display: flex;
     align-items: center;
 
@@ -22,45 +22,59 @@
   }
 }
 
-// Estilos para el slider
-.slider {
-  margin-left: 50px;
-  width: 60%;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
+.galeria {
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 20px 0;
 
   @media screen and (max-width: 768px) {
-    margin-left: 0;
-    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .col-md-4 {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+
+  .col-md-4::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
   }
 }
 
-// Estilos para cada diapositiva del slider
-.slide {
-  width: auto;
-  height: 100%;
-  display: none;
-  position: absolute;
+.ampliada {
+  position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: cover;
-  animation: slide-in 2s forwards;
-}
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 
-.slide.active {
-  display: block;
-}
-
-// Animación de deslizamiento de las diapositivas
-@keyframes slide-in {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: 0;
+  img {
+    max-width: 90%;
+    max-height: 90%;
   }
 }
+
+

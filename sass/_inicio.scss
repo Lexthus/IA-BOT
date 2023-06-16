@@ -22,14 +22,17 @@
 
 // Estilos para la sección de descripción en la sección de inicio
 .inicio-descripcion {
-  width: 60%;
-  height: auto;
-  padding: 80px;
+    width: 60%;
+    height: auto;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
   // Estilos para el título en la sección de descripción
   h1 {
     animation-duration: 2s;
-    color: black; /* Color de texto */
+    color: black;
     font-family: "Montserrat", sans-serif;
     font-size: xx-large;
     margin: 10px;
@@ -37,7 +40,7 @@
     text-transform: uppercase;
 
     @media only screen and (max-width: 768px) {
-      font-size: x-large; /* Tamaño de fuente en pantallas pequeñas */
+      font-size: x-large;
     }
   }
 
