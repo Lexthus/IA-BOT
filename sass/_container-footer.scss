@@ -45,7 +45,7 @@ iframe {
   justify-content: space-evenly;
 
   @media screen and (max-width: 768px) {
-    margin-top: 10px;
+    margin: 20px 0 10px;
   }
 }
 
@@ -74,7 +74,6 @@ iframe {
   }
 
   p {
-    font-size: 2.5vh;
     display: block;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
@@ -133,5 +132,6 @@ iframe {
     display: flex;
     align-items: center;
     color: #433535;
+    font-size: 20px;
   }
 }

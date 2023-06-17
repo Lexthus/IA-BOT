@@ -756,6 +756,7 @@ nav.visible {
 }
 @media screen and (max-width: 768px) {
   #inscripcion .experiencia {
+    margin-bottom: 25px;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -806,7 +807,7 @@ iframe {
 }
 @media screen and (max-width: 768px) {
   .container-contacto {
-    margin-top: 10px;
+    margin: 20px 0 10px;
   }
 }
 
@@ -835,7 +836,6 @@ iframe {
   }
 }
 .container-footer__logo p {
-  font-size: 2.5vh;
   display: block;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
@@ -913,6 +913,7 @@ iframe {
   display: flex;
   align-items: center;
   color: #433535;
+  font-size: 20px;
 }
 
 /* Estilos para la animación de desvanecimiento al hacer scroll */
