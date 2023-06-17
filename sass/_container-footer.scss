@@ -67,10 +67,6 @@ iframe {
     height: 9vh;
     text-align: center;
     align-items: center;
-
-    @media only screen and (max-width: 768px) {
-      height: 11vh;
-    }
   }
 
   p {
@@ -132,6 +128,6 @@ iframe {
     display: flex;
     align-items: center;
     color: #433535;
-    font-size: 20px;
+    font-size: 24px;
   }
 }

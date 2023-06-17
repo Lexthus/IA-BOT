@@ -830,11 +830,6 @@ iframe {
   text-align: center;
   align-items: center;
 }
-@media only screen and (max-width: 768px) {
-  .container-footer__logo img {
-    height: 11vh;
-  }
-}
 .container-footer__logo p {
   display: block;
   margin-block-start: 0.5em;
@@ -913,7 +908,7 @@ iframe {
   display: flex;
   align-items: center;
   color: #433535;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 /* Estilos para la animación de desvanecimiento al hacer scroll */
