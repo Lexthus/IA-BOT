@@ -697,6 +697,7 @@ nav.visible {
   margin: 80px 50px 70px;
   padding: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   /*.fondo-boton {
@@ -707,7 +708,7 @@ nav.visible {
 @media screen and (max-width: 768px) {
   #inscripcion {
     flex-direction: column;
-    margin: 30px;
+    margin: 30px 30px 0;
   }
 }
 #inscripcion h1 {
@@ -750,6 +751,17 @@ nav.visible {
 }
 #inscripcion button:active {
   transform: scale(0.95);
+}
+#inscripcion .experiencia {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 768px) {
+  #inscripcion .experiencia {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 #ubicacion {
