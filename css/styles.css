@@ -11,18 +11,19 @@
   align-items: center;
 }
 
-#abrir-menu {
+button {
   background-color: transparent;
   border: none;
-  padding: 10px 24px;
   color: #222222;
   display: none;
 }
-#abrir-menu i {
+button #abrir-menu {
+  margin-right: 14px;
+  padding: 10px;
   font-size: 27px;
 }
 @media screen and (max-width: 768px) {
-  #abrir-menu {
+  button {
     display: block;
   }
 }
@@ -726,6 +727,7 @@ nav.visible {
   width: fit-content;
   min-width: 100px;
   height: auto;
+  margin-top: 30px;
   padding: 15px;
   border-radius: 5px;
   border: 2.5px solid #e0e1e4;
@@ -739,11 +741,6 @@ nav.visible {
   font-size: larger;
   font-weight: bold;
   text-transform: uppercase;
-}
-@media screen and (max-width: 768px) {
-  #inscripcion button {
-    margin-top: 25px;
-  }
 }
 #inscripcion button:hover {
   background-color: #f2f2f2;
@@ -1064,7 +1061,6 @@ footer {
 @media only screen and (max-width: 768px) {
   footer {
     padding: 30px 0 0;
-    height: 100vh;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;

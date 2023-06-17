@@ -30,19 +30,25 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector("#navbar-menu");
   const abrir = document.querySelector("#abrir-menu");
   const cerrar = document.querySelector("#cerrar-menu");
-
+  
   abrir.addEventListener("click", () => {
-    nav.classList.add("visible")
-  })
-
+    nav.classList.add("visible");
+  });
+  
   cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible")
-  })
+    nav.classList.remove("visible");
+  });
+  
+  document.addEventListener("click", (event) => {
+    if (!nav.contains(event.target) && event.target !== abrir) {
+      nav.classList.remove("visible");
+    }
+  });  
 
   // Botón de inscripción:
 
-  document.getElementById('boton-inscripcion').addEventListener('click', function() {
-  window.open('https://forms.gle/hZEFM1cUyTCGGYyC7', '_blank');
+  document.getElementById('boton-inscripcion').addEventListener('click', function () {
+    window.open('https://forms.gle/hZEFM1cUyTCGGYyC7', '_blank');
   })
 });
 

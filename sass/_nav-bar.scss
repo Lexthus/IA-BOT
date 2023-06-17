@@ -15,14 +15,15 @@
 }
 
 // Estilos para el botón de abrir el menú en dispositivos móviles
-#abrir-menu {
+button {
   background-color: transparent;
   border: none;
-  padding: 10px 24px;
   color: variables.$black;
   display: none;
 
-  i {
+  #abrir-menu {
+    margin-right: 14px;
+    padding: 10px;
     font-size: 27px;
   }
 
