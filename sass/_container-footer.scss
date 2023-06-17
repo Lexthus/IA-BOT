@@ -1,8 +1,58 @@
 @use "variables.scss";
 
+// Estilos para la sección de ubicación
+#ubicacion {
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+  }
+  
+  @media screen and (max-width: 768px) {
+    width: 60%;
+  }
+
+  // Estilos para el título de la ubicación
+  h1 {
+    font-size: larger;
+  }
+}
+
+// Estilos para el iframe del mapa
+iframe {
+  width: 50%;
+  height: auto;
+  margin: 10px;
+  border-radius: 2%;
+
+  @media only screen and (max-width: 1024px) {
+    width: 90%;
+    height: 100%;
+  }
+}
+
+#contacto {
+  gap: 2px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-contacto {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
+}
+
+
 /* Estilos para el contenedor del logo en el footer */
 .container-footer__logo {
-  padding: 15px;
+  padding: 15px 15px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +69,7 @@
     align-items: center;
 
     @media only screen and (max-width: 768px) {
-      height: 10vh;
+      height: 11vh;
     }
   }
 
@@ -34,10 +84,8 @@
 
 /* Estilos para el contenedor de contacto en el footer */
 #contacto {
-  width: 65%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 16px;
+  display: flex;
+  /*grid-template-columns: repeat(2, 1fr);*/
   transition: all 0.3s;
 
   @media only screen and (max-width: 768px) {

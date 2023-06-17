@@ -11,17 +11,28 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+
+  @media screen and (max-width: 768px) {
+    gap: 0;
+  }
 }
 
 // Estilos para las tarjetas en la sección de Misión y Valores
 .mision-valores-tarjeta {
   padding: 10px;
 
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+
   i {
     font-size: 70px;
     margin: 5px 0;
   }
 
+  .fa-lightbulb, .fa-heart, .fa-star, .fa-smile-beam {
+    padding: 8px;
+  }
   // Estilos para el icono de bombilla en la tarjeta de Misión
   .fa-lightbulb {
     color: variables.$wedo;
@@ -44,5 +55,10 @@
 
   p {
     margin-top: 25px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 0;
+      padding: 15px;
+    }
   }
 }

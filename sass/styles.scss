@@ -9,7 +9,6 @@
 @use "equipo.scss";
 @use "recursos.scss";
 @use "inscripcion.scss";
-@use "ubicacion.scss";
 @use "container-footer.scss";
 @use "elementos-javascript";
 
@@ -136,16 +135,19 @@ html {
 /* Estilos para el pie de página */
 footer {
   width: 100%;
-  padding: 15px;
+  padding: 30px;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(#f9f9ea, #55cc55 1%);
   text-align: center;
 
   @media only screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
+    padding: 30px 0 0;
+    height: 100vh;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
   }
 }
