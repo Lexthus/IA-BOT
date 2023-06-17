@@ -11,19 +11,19 @@
   align-items: center;
 }
 
-button {
+#boton-abrir-menu {
   background-color: transparent;
   border: none;
   color: #222222;
   display: none;
 }
-button #abrir-menu {
+#boton-abrir-menu #abrir-menu {
   margin-right: 14px;
   padding: 10px;
   font-size: 27px;
 }
 @media screen and (max-width: 768px) {
-  button {
+  #boton-abrir-menu {
     display: block;
   }
 }
@@ -723,7 +723,7 @@ nav.visible {
     font-size: 24px;
   }
 }
-#inscripcion button {
+#inscripcion #boton-inscripcion {
   width: fit-content;
   min-width: 100px;
   height: auto;
@@ -742,23 +742,29 @@ nav.visible {
   font-weight: bold;
   text-transform: uppercase;
 }
-#inscripcion button:hover {
+#inscripcion #boton-inscripcion:hover {
   background-color: #f2f2f2;
   box-shadow: 0px 0px 20px -18px;
 }
-#inscripcion button:active {
+#inscripcion #boton-inscripcion:active {
   transform: scale(0.95);
 }
 #inscripcion .experiencia {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   #inscripcion .experiencia {
     margin-bottom: 25px;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #inscripcion .experiencia p {
+    font-size: 15px;
   }
 }
 

@@ -29,7 +29,7 @@
     padding: 120px;
   }*/
 
-  button {
+  #boton-inscripcion {
     width: fit-content;
     min-width: 100px;
     height: auto;
@@ -61,12 +61,19 @@
   .experiencia {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 
     @media screen and (max-width: 768px) {
       margin-bottom: 25px;
-      width: 100%;
-      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
     }
+
+    p {
+      @media screen and (max-width:768px) {
+        font-size: 15px;
+      }
+    };
   }
 }
