@@ -544,7 +544,7 @@ nav.visible {
 /* Estilos para las tarjetas de equipo */
 .equipo-tarjeta img,
 .equipo-tarjeta_ancha img {
-  width: 50%;
+  width: 100%;
   min-width: 250px;
   max-width: 320px;
   height: auto;
