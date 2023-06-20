@@ -154,12 +154,16 @@ footer {
 // Chat-BOT
 
 .chatbox-wrapper {
-  width: 220px;
+  width: 300px;
   position: fixed;
   bottom: 65px;
   right: 15px;
   visibility: hidden;
   z-index: 999;
+
+  @media screen and (max-width:768px) {
+    width: 220px;
+  }
 }
 
 .chatbox-wrapper.hidden {
@@ -248,7 +252,7 @@ footer {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  background-color: #55cc55;
+  background-color: variables.$black;
   color: #fff;
   border: none;
   border-radius: 5px;
