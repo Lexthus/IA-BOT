@@ -18,6 +18,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
@@ -49,7 +57,10 @@
       content="Cursos de robótica en LEGO para niños. Aprende programación y resolución de problemas con IABOT."
     />
     <meta property="og:url" content="https://iabot.com.ar/" />
-    <meta property="og:image" content="https://iabot.com.ar/public_html/assets/img/IA-BOT.jpg" />
+    <meta
+      property="og:image"
+      content="https://iabot.com.ar/public_html/assets/img/IA-BOT.jpg"
+    />
   </head>
   <body>
     <header>
@@ -93,6 +104,26 @@
           alt="Personaje Lego Saludando"
         />
       </div>
+      <div class="chatbox-wrapper">
+        <div class="message-box">
+          <div class="chat response">
+            <img src="assets/img/chat-bot.png" />
+            <span
+              >Hola! <br />
+              Cómo puedo ayudarte?
+            </span>
+          </div>
+        </div>
+        <div class="messagebar">
+          <div class="bar-wrapper">
+            <input type="text" placeholder="Escriba aquí su mensaje..." />
+            <button>
+              <span class="material-symbols-rounded"> send </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button id="toggleChatbot">Chat-BOT</button>
     </main>
 
     <article id="historia" class="seccion-historia">
@@ -371,13 +402,16 @@
       </h1>
       <button id="boton-inscripcion">Inscribete</button>
       <div class="experiencia">
-        <h2>2022
+        <h2>
+          2022
           <p>Año en el que dimos comienzo a nuestras actividades educativas.</p>
         </h2>
-        <h2>135
+        <h2>
+          135
           <p>Experiencias de Estudiantes con nuestro Enfoque de Aprendizaje</p>
         </h2>
-        <h2>95%
+        <h2>
+          95%
           <p>Tasa de satisfacción con nuestros cursos de robótica</p>
         </h2>
         <!--<h2>1200
