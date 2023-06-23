@@ -86,13 +86,13 @@
 @media screen and (max-width: 768px) {
   // Estilos para la línea de tiempo en dispositivos móviles
   .bottom {
-    border-bottom: 2px solid variables.$spike;
+    border-bottom: 2px solid #44a344;
   }
 }
 
 // Estilos para los elementos completados en la línea de tiempo
 .li.complete .status {
-  border-top: 2px solid variables.$spike;
+  border-top: 2px solid #76d676;
 
   // Estilos para el marcador antes del estado en elementos completados
   &:before {

@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const messageBox = document.querySelector(".message-box");
 
   let API_URL = "https://api.openai.com/v1/chat/completions";
-  let API_KEY = "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";
+  let API_KEY = "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";
 
   // Almacenamiento en caché de respuestas
   const cachedResponses = {};
